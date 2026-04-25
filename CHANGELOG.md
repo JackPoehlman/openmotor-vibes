@@ -18,19 +18,27 @@ This fork is periodically rebased on upstream openMotor releases. To see the ful
 ## [Unreleased]
 
 ### Added
-- *TODO: Document your new features here*
-- Example: "Enhanced grain preview with real-time regression animation"
+- **NozzleCoeffTool** - Back-calculate throat erosion and slag coefficients for nozzle analysis
+- **Casing section** in nozzle preview widget for enhanced nozzle visualization
+- **Propellant diameter display** in motor statistics alongside propellant length
+- **Tool input memory** - Tool inputs are now remembered between runs for improved workflow
 
 ### Changed
-- *TODO: Document changes to existing features*
-- Example: "Improved propellant library loading performance"
+- Relaxed grain size limits to support more diverse motor designs
+- Improved error messaging to mention Kn (characteristic velocity) in thrust calculations
+- Updated grain and geometry type hints and associated tests for better code quality
+- Formatting and import structure improvements across motorlib
 
 ### Fixed
-- *TODO: Document bug fixes*
-- Example: "Fixed issue with DXF import failing on certain file formats"
+- Fixed spurious high core Mach numbers caused by chamber pressure dropping at beginning or end of burn
+- Fixed core Mach calculation issues
+- Fixed issue with grain perimeter calculation using rewritten method
+- Fixed design designation handling to support arbitrarily long designations
+- Fixed handling of invalid preference and propellant files to degrade gracefully
+- Fixed design designation support for longer motor designations
 
 ### Removed
-- *TODO: Document removed features if any*
+- Unused imports cleanup across motorlib modules
 
 ---
 
@@ -40,21 +48,25 @@ This fork is periodically rebased on upstream openMotor releases. To see the ful
 
 | File/Component | Change | Reason |
 |---|---|---|
-| *TODO: Add entries* | Example change | Example reason |
+| motorlib/motor.py | Enhanced core Mach calculation | Fixed spurious high Mach numbers at burn start/end |
+| uilib/tools/nozzleCoeff.py | New NozzleCoeffTool | Enable back-calculation of throat erosion coefficients |
+| uilib/widgets/nozzlePreviewWidget.py | Added casing visualization | Improved nozzle design preview |
+| motorlib/grain.py | Relaxed size limits | Support wider range of motor geometries |
+| uilib/simulationManager.py | Tool input persistence | Better workflow - remember previous inputs |
 
 ### Contributors
-- YOUR_USERNAME - Initial fork and custom enhancements
+- JackPoehlman - Fork creator and maintainer
 
 ---
 
 ## Upstream Version Tracking
 
-This fork is based on upstream openMotor commit: `[ADD_COMMIT_HASH_HERE]`
+This fork is based on upstream openMotor commit: `da7f410` ("Gracefully handle invalid preference/propellant files")
 
-Last sync with upstream: [Add date]
+Last sync with upstream: April 25, 2026
 
 ### Notable Upstream Releases
-- openMotor v2.X.X - [Brief note about what was integrated]
+- openMotor v0.6.1 - Latest stable baseline for this fork (tag: v0.6.1, upstream/fix_actions)
 
 ---
 
