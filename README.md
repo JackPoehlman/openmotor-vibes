@@ -85,6 +85,10 @@ Contributing
 ------------
 As openMotor is open source, one of the goals of the project is to have as many eyes on the code as possible. I believe this is the best way to avoid bugs and also the easiest way to get new features added to the software. If you have ideas on how to improve the program or find an error, please open an issue ticket for discussion or file a pull request if possible.
 
+Attribution
+-----------
+This is a fork of the original [openMotor](https://github.com/reilleya/openMotor) project created by [reilleya](https://github.com/reilleya). The openmotor-vibes fork maintains the same GPLv3 license as the original project and is periodically synced with upstream releases through rebase. See [CHANGELOG.md](CHANGELOG.md) for a detailed list of modifications and enhancements made in this fork.
+
 Disclaimer
 ----------
 
