@@ -1,6 +1,6 @@
 # GitHub Setup Guide for openmotor-vibes
 
-This document walks you through completing the GitHub publication of your openmotor-vibes fork.
+This document covers repository setup, upstream sync, and publishing built binaries (including the Windows installer) to GitHub Releases.
 
 ## ✅ What's Been Done Locally
 
@@ -11,7 +11,7 @@ The following changes have been committed to your git repository:
 3. **CHANGELOG.md** - Created template for tracking modifications and upstream synchronization
 4. **Git commit** - Created initial commit with all attribution changes (commit: `345653f`)
 
-**Current branch:** `staging` (you can keep this or switch to `main`)
+**Current branch:** `main`
 
 ---
 
@@ -46,6 +46,59 @@ git remote -v  # Verify you see both 'origin' and 'upstream'
 ```
 
 **Done!** Your repository is now live at `https://github.com/YOUR_USERNAME/openmotor-vibes`
+
+---
+
+## 📦 Publish Built Binaries to GitHub Releases
+
+This project keeps installer artifacts out of git and publishes them as GitHub Release assets.
+
+### Prerequisites
+
+1. You have already built and tested the installer locally.
+2. The installer artifact exists in `installers/Output`.
+3. You have push access to `JackPoehlman/openmotor-vibes`.
+
+### Verify local installer artifact
+
+```powershell
+Get-ChildItem -Path installers\Output -File
+```
+
+Expected artifact example:
+
+- `installers/Output/OpenMotorVibes-Setup.exe`
+
+### Create and publish a release (GitHub Web UI)
+
+1. Go to `https://github.com/JackPoehlman/openmotor-vibes/releases/new`
+2. Create/select a new tag (for example: `v0.6.2`)
+3. Set release title (for example: `OpenMotor Vibes v0.6.2`)
+4. Drag and drop release assets:
+	 - `installers/Output/OpenMotorVibes-Setup.exe`
+	 - Optional: a zip of `dist/openMotorVibes` for a portable build
+5. Add release notes and click **Publish release**
+
+### Create and publish a release (GitHub CLI)
+
+If GitHub CLI is installed and authenticated:
+
+```powershell
+& "C:\Program Files\GitHub CLI\gh.exe" release create v0.6.2 `
+	"installers/Output/OpenMotorVibes-Setup.exe#Windows Installer" `
+	--repo JackPoehlman/openmotor-vibes `
+	--title "OpenMotor Vibes v0.6.2" `
+	--notes "See CHANGELOG.md for details."
+```
+
+If the tag already exists and you only need to upload/replace assets:
+
+```powershell
+& "C:\Program Files\GitHub CLI\gh.exe" release upload v0.6.2 `
+	"installers/Output/OpenMotorVibes-Setup.exe#Windows Installer" `
+	--repo JackPoehlman/openmotor-vibes `
+	--clobber
+```
 
 ---
 
@@ -193,8 +246,8 @@ upstream  https://github.com/reilleya/openMotor.git (push)
 - See: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 
 ### Want to switch branches?
-Currently on: `staging`
-To switch to `main`: `git checkout main` (after you push)
+Currently on: `main`
+To switch branches: `git checkout <branch-name>`
 
 ---
 

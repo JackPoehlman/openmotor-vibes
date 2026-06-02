@@ -39,6 +39,8 @@ Get the latest fork release, including packaged binaries and installer artifacts
 - [OpenMotor Vibes latest release](https://github.com/JackPoehlman/openmotor-vibes/releases/latest)
 - [Windows installer script (Inno Setup)](./installers/windows.iss)
 
+Maintainers: see [GITHUB_SETUP.md](./GITHUB_SETUP.md) for the release publishing checklist (including installer asset upload).
+
 ### Original openMotor (upstream)
 
 Get the original project's release builds from:
