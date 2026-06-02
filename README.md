@@ -26,6 +26,33 @@ OpenMotor estimates chamber pressure and thrust from propellant properties, grai
 - Save/load with undo and redo support
 - Design optimization and analysis tools
 
+## What This Fork Adds
+
+OpenMotor Vibes includes fork-specific improvements on top of upstream openMotor:
+
+### New Tools and Data
+
+- Hardware catalog browser (hardware picker) for selecting supported motor cases and nozzles
+- Grain preset picker to quickly initialize common grain configurations
+- Bundled hardware catalog and hardware weights datasets used by the picker workflows
+- NozzleCoeffTool for back-calculating throat erosion and slag coefficients
+
+### UI and Workflow Improvements
+
+- Casing visualization added to the nozzle preview widget
+- Propellant diameter shown in motor statistics (alongside propellant length)
+- Tool input memory so tool dialogs remember prior inputs between runs
+
+### Simulation and Robustness Changes
+
+- Relaxed grain size limits to support a wider range of motor geometries
+- Improved core Mach behavior near burn start/end to avoid spurious high values
+- Improved handling of invalid preference and propellant files
+- Support for longer design designations
+- Improved error wording in thrust-related calculations to mention Kn
+
+See [CHANGELOG.md](CHANGELOG.md) for full details and ongoing updates.
+
 The calculations are based on Rocket Propulsion Elements by George Sutton and [Richard Nakka's work](https://www.nakka-rocketry.net/rtheory.html).
 
 ![Screenshot](https://reilley.net/openMotor/screenshot.png)
