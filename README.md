@@ -1,97 +1,106 @@
-openMotor
-==========
+# OpenMotor Vibes
+
 ![Logo](./resources/oMIconCycles.png)
 
-Overview
---------
-openMotor is an open-source internal ballistics simulator for rocket motor experimenters. The software estimates a rocket motor's chamber pressure and thrust based on propellant properties, grain geometry, and nozzle specifications. It uses the Fast Marching Method to determine how a propellant grain regresses, which allows the use of arbitrary core geometries.
+OpenMotor Vibes is a fork of the original [openMotor](https://github.com/reilleya/openMotor), an open-source internal ballistics simulator for rocket motor experimenters.
 
-OpenMotor Vibes is an open-source internal ballistics simulator for rocket motor experimenters. The software estimates a rocket motor's chamber pressure and thrust based on propellant properties, grain geometry, and nozzle specifications. It uses the Fast Marching Method to determine how a propellant grain regresses, which allows the use of arbitrary core geometries.
-* Metric and imperial units
-* Support for common grain geometries such as BATES, Finocyl, Star and more
-* Loading custom grain geometry from DXF files
-* A propellant editor that allows the user to enter the properties of as many propellants as they wish
-* The grain editor displays how a grain will regress to cut down on the guesswork involved in tweaking geometry
-* ENG file exporting
-* Burnsim importing and exporting
-* A UI that supports saving and loading designs along with undo and redo
-* Tools for easily tweaking and optimizing your design 
+## Fork Attribution
 
-The calculations involved were sourced from Rocket Propulsion Elements by George Sutton and from [Richard Nakka's website](https://www.nakka-rocketry.net/rtheory.html).
+- Original project: [reilleya/openMotor](https://github.com/reilleya/openMotor)
+- Original author: [reilleya](https://github.com/reilleya)
+- This fork: [JackPoehlman/openmotor-vibes](https://github.com/JackPoehlman/openmotor-vibes)
+
+This fork keeps compatibility with upstream while adding fork-specific features and tooling. See [CHANGELOG.md](CHANGELOG.md) for fork changes and upstream sync notes.
+
+## Overview
+
+OpenMotor estimates chamber pressure and thrust from propellant properties, grain geometry, and nozzle specifications. It uses the Fast Marching Method to model grain regression, including arbitrary core geometries.
+
+- Metric and imperial units
+- Support for common grain geometries (BATES, Finocyl, Star, and more)
+- Loading custom grain geometry from DXF files
+- Propellant editor for custom propellant libraries
+- Grain regression visualization in the grain editor
+- ENG file export
+- BurnSim import and export
+- Save/load with undo and redo support
+- Design optimization and analysis tools
+
+The calculations are based on Rocket Propulsion Elements by George Sutton and [Richard Nakka's work](https://www.nakka-rocketry.net/rtheory.html).
 
 ![Screenshot](https://reilley.net/openMotor/screenshot.png)
 
-Download
--------
-You can download the latest version for your system [here](https://github.com/reilleya/openMotor/releases/latest). From there, just unzip the file and run it. Alternatively, you can run it from source code to get the latest features. openMotor is avaliable on the AUR as `openmotor` and on debian apt as `openmotor`
+## Downloads and Installers
 
-Building from Source
-You can download the latest version for your system [here](https://github.com/JackPoehlman/openmotor-vibes/releases/latest). From there, just unzip the file and run it. Alternatively, you can run it from source code to get the latest features. OpenMotor Vibes is available on the AUR as `openmotor` and on debian apt as `openmotor`
---------------------
-The program is currently being developed using python 3.10. The dependencies are outlined in `requirements.txt`, the main ones include `PyQt6`, `matplot`, `numpy`, `scipy`, `scikit-fmm`, and `scikit-image`. Because the PyQt6 bindings are used for the GUI, Qt6 must also be installed.
+### OpenMotor Vibes (this fork)
 
-The easiest way to build/run from source code is to clone the repository and install the required dependencies into a virtual environment:
-```
-$ git clone https://github.com/reilleya/openMotor
-$ cd openMotor
-$ python3 -m venv .venv
-$ git clone https://github.com/JackPoehlman/openmotor-vibes
-$ cd openmotor-vibes
-$ pip install -r requirements.txt
-```
-If you are using a version of python that does not have a prebuilt version of one of the dependencies, the `pip` command above might fail with an error like:
-```
-Failed building wheel for scikit-fmm
-skfmm/fmm.cpp:4:10: fatal error: Python.h: No such file or directory
-```
-The fix is to install `python3-dev` or the equivalent with your system package manager.
+Get the latest fork release, including packaged binaries and installer artifacts, from:
 
-If you are running Windows and get errors like `DLL load failed while importing _cext` when trying to run the application after installing the dependencies, you may need to install the latest Microsoft Visual C++ Redistributable.
+- [OpenMotor Vibes latest release](https://github.com/JackPoehlman/openmotor-vibes/releases/latest)
+- [Windows installer script (Inno Setup)](./installers/windows.iss)
 
-#### UI Files:
-openMotor uses Qt Designer to lay out the GUI, which generates `.ui` files describing the user interface. 
-We use `pyuic6` to compile these files into Python source code which is then included in the program as ordinary source code.
+### Original openMotor (upstream)
 
-Because these autogenerated files are not committed to the source tree, you must build them by running:
-```
-$ python setup.py build_ui
-```
-Note that if you make changes to the UI using the `.ui` forms, you must re-build using the same command.
+Get the original project's release builds from:
 
-#### Cython Files:
-to speed up some more computationally expensive parts of the codebase, openMotor uses the Cython programming language to run calculations in C.
+- [openMotor latest release](https://github.com/reilleya/openMotor/releases/latest)
 
-because the Cython code must be compiled separately for each system, you must build the library by running:
-```
-$ python setup.py build_ext --inplace
-```
-Note that if you make changes to any of the `.pyx` files, you must re-compile the Cython library using the same command.
+Use the fork release if you want fork-specific features. Use upstream if you want the original project exactly as maintained by upstream.
 
-#### Run the Application:
+## Building from Source
 
-Once everything is set up, you can start openMotor by running: `python main.py`
+The project is currently developed with Python 3.10. Dependencies are listed in requirements.txt (notably PyQt6, matplotlib, numpy, scipy, scikit-fmm, and scikit-image).
 
-###### Note: On some systems, Python 2 and 3 are installed simultaneously, so you may have to specify which version to run when creating the venv. After the venv has been activated, the programs `python` and `pip` are aliased to the python runtime specific for your venv, so use those (instead of `pip3` and `python3`, on e.g. Debian Linux)
+### Quick setup
 
-Data Files
------------
-openMotor uses [YAML](https://en.wikipedia.org/wiki/YAML) for data storage. Motor files have the extension `.ric` to differentiate them, but internally they are YAML and can be edited in a text editor if desired. The recommended MIME type for these files is `application/vnd.openmotor+yaml`.
+1. Clone this fork repository.
+2. Create and activate a virtual environment.
+3. Install dependencies from requirements.txt.
 
-The remaining user information, like propellant data and preferences, is stored in plain YAML files in `<AppData>\Local\openMotor` on Windows, `/Users/<username>/Library/Application Support/openMotor` on Mac OS, and `/home/<username>/.local/share/openMotor` on Linux.
+If dependency builds fail with missing Python headers (for example while building scikit-fmm), install your system's Python development package (for example python3-dev on Debian/Ubuntu).
 
-License
--------
-OpenMotor Vibes uses [YAML](https://en.wikipedia.org/wiki/YAML) for data storage. Motor files have the extension `.ric` to differentiate them, but internally they are YAML and can be edited in a text editor if desired. The recommended MIME type for these files is `application/vnd.openmotor+yaml`.
+On Windows, if you encounter DLL load errors after dependency installation, install the latest Microsoft Visual C++ Redistributable.
 
-Contributing
-------------
-As openMotor is open source, one of the goals of the project is to have as many eyes on the code as possible. I believe this is the best way to avoid bugs and also the easiest way to get new features added to the software. If you have ideas on how to improve the program or find an error, please open an issue ticket for discussion or file a pull request if possible.
+### UI files
 
-OpenMotor Vibes is released under the GNU GPL v3 license. The source code is distributed so you can build cool stuff with it, and so you don't have to trust the calculations are being done correctly. Check for yourself (and file an issue ticket!) if you doubt the results.
------------
-This is a fork of the original [openMotor](https://github.com/reilleya/openMotor) project created by [reilleya](https://github.com/reilleya). The openmotor-vibes fork maintains the same GPLv3 license as the original project and is periodically synced with upstream releases through rebase. See [CHANGELOG.md](CHANGELOG.md) for a detailed list of modifications and enhancements made in this fork.
+OpenMotor uses Qt Designer .ui files that must be compiled before running from source:
 
-Disclaimer
-----------
+- python setup.py build_ui
 
-Rocket motors can be dangerous! Always verify calculations before testing a motor, and test far enough away from people and structures to avoid damage. The results from this program are provided as an estimate, and come with NO guarantees!
+If you edit .ui forms, rerun the same command.
+
+### Cython files
+
+Some performance-critical code is compiled with Cython and must be built per platform:
+
+- python setup.py build_ext --inplace
+
+If you edit .pyx files, rerun this command.
+
+### Run the application
+
+- python main.py
+
+## Data Files
+
+Motor files use YAML with the .ric extension. The recommended MIME type is application/vnd.openmotor+yaml.
+
+User files such as preferences and propellant libraries are stored in platform app-data locations:
+
+- Windows: <AppData>\Local\openMotor
+- macOS: /Users/<username>/Library/Application Support/openMotor
+- Linux: /home/<username>/.local/share/openMotor
+
+## Contributing
+
+Contributions are welcome. If you find a bug or have an idea, open an issue or submit a pull request.
+
+If reporting a bug, please indicate whether it reproduces in upstream openMotor or only in this fork.
+
+## License
+
+OpenMotor Vibes is released under GNU GPL v3, consistent with the upstream project.
+
+## Disclaimer
+
+Rocket motors can be dangerous. Always verify calculations before testing and conduct testing at safe distances from people and structures. This software provides estimates only, with no guarantees.
