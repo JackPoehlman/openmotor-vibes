@@ -27,20 +27,20 @@ extensions = [
 ]
 
 setup(
-    name='openmotor-vibes',
+    name='OpenMotor-Vibes',
     version=appVersionStr,
-    author='YOUR_USERNAME',
+    author='JackPoehlman',
     license='GPLv3',
     ext_modules=cythonize(extensions, 
             nthreads = multiprocessing.cpu_count(), 
             compiler_directives={'language_level': 3}
             ),
     packages=find_packages(),
-    url='https://github.com/YOUR_USERNAME/openmotor-vibes',
+    url='https://github.com/JackPoehlman/openmotor-vibes',
     project_urls={
         'Upstream Project': 'https://github.com/reilleya/openMotor',
     },
-    description='A fork of openMotor with custom enhancements and vibes - an internal ballistics simulator',
+    description='A fork of OpenMotor with custom enhancements and vibes - an internal ballistics simulator',
     long_description=open('README.md').read(),
     cmdclass=cmdclass
 )

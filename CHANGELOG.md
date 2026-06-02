@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## About openmotor-vibes
+## About OpenMotor Vibes
 
 This is a fork of the original [openMotor](https://github.com/reilleya/openMotor) by [reilleya](https://github.com/reilleya). This fork is maintained to add custom enhancements and improvements while staying compatible with upstream releases.
 

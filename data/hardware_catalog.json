@@ -1,0 +1,585 @@
+{
+  "RMS-18/20": {
+    "designation": "RMS-18/20",
+    "type": "RMS",
+    "diameter": 18,
+    "motorDiameter": 18,
+    "motorLength": 70,
+    "maxTotalImpulse": 20,
+    "maxGrains": 1,
+    "hardwareWeightG": 20.7,
+    "compatibleNozzles": [],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-24/40": {
+    "designation": "RMS-24/40",
+    "type": "RMS",
+    "diameter": 24,
+    "motorDiameter": 24,
+    "motorLength": 70,
+    "maxTotalImpulse": 40,
+    "maxGrains": 1,
+    "hardwareWeightG": 38.5,
+    "compatibleNozzles": [
+      "24mm-086",
+      "24mm-104-RMS",
+      "24mm-104",
+      "24mm-141"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-24/60": {
+    "designation": "RMS-24/60",
+    "type": "RMS",
+    "diameter": 24,
+    "motorDiameter": 24,
+    "motorLength": 95,
+    "maxTotalImpulse": 60,
+    "maxGrains": 2,
+    "hardwareWeightG": 55.0,
+    "compatibleNozzles": [
+      "24mm-086",
+      "24mm-104-RMS",
+      "24mm-104",
+      "24mm-141"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-29/40-120": {
+    "designation": "RMS-29/40-120",
+    "type": "RMS",
+    "diameter": 29,
+    "motorDiameter": 29,
+    "motorLength": 124,
+    "maxTotalImpulse": 120,
+    "maxGrains": 1,
+    "hardwareWeightG": 86.0,
+    "compatibleNozzles": [
+      "29mm-104",
+      "29mm-141",
+      "29mm-180"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-29/60": {
+    "designation": "RMS-29/60",
+    "type": "RMS",
+    "diameter": 29,
+    "motorDiameter": 29,
+    "motorLength": 89,
+    "maxTotalImpulse": 60,
+    "maxGrains": 1,
+    "hardwareWeightG": 79.8,
+    "compatibleNozzles": [
+      "29mm-104",
+      "29mm-141",
+      "29mm-180"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-29/100": {
+    "designation": "RMS-29/100",
+    "type": "RMS",
+    "diameter": 29,
+    "motorDiameter": 29,
+    "motorLength": 125,
+    "maxTotalImpulse": 100,
+    "maxGrains": 1,
+    "hardwareWeightG": 91.3,
+    "compatibleNozzles": [
+      "29mm-104",
+      "29mm-141",
+      "29mm-180"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-29/120": {
+    "designation": "RMS-29/120",
+    "type": "RMS",
+    "diameter": 29,
+    "motorDiameter": 29,
+    "motorLength": 150,
+    "maxTotalImpulse": 120,
+    "maxGrains": 1,
+    "hardwareWeightG": 86.8,
+    "compatibleNozzles": [
+      "29mm-104",
+      "29mm-141",
+      "29mm-180"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-29/180": {
+    "designation": "RMS-29/180",
+    "type": "RMS",
+    "diameter": 29,
+    "motorDiameter": 29,
+    "motorLength": 194,
+    "maxTotalImpulse": 180,
+    "maxGrains": 2,
+    "hardwareWeightG": 116.2,
+    "compatibleNozzles": [
+      "29mm-104",
+      "29mm-141",
+      "29mm-180"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-29/240": {
+    "designation": "RMS-29/240",
+    "type": "RMS",
+    "diameter": 29,
+    "motorDiameter": 29,
+    "motorLength": 238,
+    "maxTotalImpulse": 240,
+    "maxGrains": 3,
+    "hardwareWeightG": 138.4,
+    "compatibleNozzles": [
+      "29mm-104",
+      "29mm-141",
+      "29mm-180",
+      "29mm-291"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-29/360": {
+    "designation": "RMS-29/360",
+    "type": "RMS",
+    "diameter": 29,
+    "motorDiameter": 29,
+    "motorLength": 333,
+    "maxTotalImpulse": 360,
+    "maxGrains": 4,
+    "hardwareWeightG": 181.3,
+    "compatibleNozzles": [
+      "29mm-104",
+      "29mm-141",
+      "29mm-180",
+      "29mm-291"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-38/120": {
+    "designation": "RMS-38/120",
+    "type": "RMS",
+    "diameter": 38,
+    "motorDiameter": 38,
+    "motorLength": 106,
+    "maxTotalImpulse": 120,
+    "maxGrains": 1,
+    "hardwareWeightG": 135.9,
+    "compatibleNozzles": [
+      "38mm-137",
+      "38mm-375"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-38/240": {
+    "designation": "RMS-38/240",
+    "type": "RMS",
+    "diameter": 38,
+    "motorDiameter": 38,
+    "motorLength": 152,
+    "maxTotalImpulse": 240,
+    "maxGrains": 2,
+    "hardwareWeightG": 153.4,
+    "compatibleNozzles": [
+      "38mm-137",
+      "38mm-375"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-38/360": {
+    "designation": "RMS-38/360",
+    "type": "RMS",
+    "diameter": 38,
+    "motorDiameter": 38,
+    "motorLength": 203,
+    "maxTotalImpulse": 360,
+    "maxGrains": 3,
+    "hardwareWeightG": 178.8,
+    "compatibleNozzles": [
+      "38mm-137",
+      "38mm-375"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-38/480": {
+    "designation": "RMS-38/480",
+    "type": "RMS",
+    "diameter": 38,
+    "motorDiameter": 38,
+    "motorLength": 250,
+    "maxTotalImpulse": 480,
+    "maxGrains": 4,
+    "hardwareWeightG": 227.4,
+    "compatibleNozzles": [
+      "38mm-137",
+      "38mm-375"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-38/600": {
+    "designation": "RMS-38/600",
+    "type": "RMS",
+    "diameter": 38,
+    "motorDiameter": 38,
+    "motorLength": 299,
+    "maxTotalImpulse": 600,
+    "maxGrains": 5,
+    "hardwareWeightG": 253.0,
+    "compatibleNozzles": [
+      "38mm-137",
+      "38mm-375"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-38/720": {
+    "designation": "RMS-38/720",
+    "type": "RMS",
+    "diameter": 38,
+    "motorDiameter": 38,
+    "motorLength": 337,
+    "maxTotalImpulse": 720,
+    "maxGrains": 6,
+    "hardwareWeightG": 276.0,
+    "compatibleNozzles": [
+      "38mm-137",
+      "38mm-375"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-38/1080": {
+    "designation": "RMS-38/1080",
+    "type": "RMS",
+    "diameter": 38,
+    "motorDiameter": 38,
+    "motorLength": 479,
+    "maxTotalImpulse": 1080,
+    "maxGrains": 8,
+    "hardwareWeightG": 363.9,
+    "compatibleNozzles": [
+      "38mm-137",
+      "38mm-375"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-38/1320": {
+    "designation": "RMS-38/1320",
+    "type": "RMS",
+    "diameter": 38,
+    "motorDiameter": 38,
+    "motorLength": 584,
+    "maxTotalImpulse": 1320,
+    "maxGrains": 10,
+    "hardwareWeightG": 418,
+    "compatibleNozzles": [
+      "38mm-137",
+      "38mm-375"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-54/426": {
+    "designation": "RMS-54/426",
+    "type": "RMS",
+    "diameter": 54,
+    "motorDiameter": 54,
+    "motorLength": 156,
+    "maxTotalImpulse": 426,
+    "maxGrains": 1,
+    "hardwareWeightG": 317.3,
+    "compatibleNozzles": [
+      "54mm-192",
+      "54mm-313",
+      "54mm-455",
+      "54mm-562"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-54/852": {
+    "designation": "RMS-54/852",
+    "type": "RMS",
+    "diameter": 54,
+    "motorDiameter": 54,
+    "motorLength": 230,
+    "maxTotalImpulse": 852,
+    "maxGrains": 2,
+    "hardwareWeightG": 409.1,
+    "compatibleNozzles": [
+      "54mm-192",
+      "54mm-313",
+      "54mm-455",
+      "54mm-562"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-54/1280": {
+    "designation": "RMS-54/1280",
+    "type": "RMS",
+    "diameter": 54,
+    "motorDiameter": 54,
+    "motorLength": 316,
+    "maxTotalImpulse": 1280,
+    "maxGrains": 3,
+    "hardwareWeightG": 462.8,
+    "compatibleNozzles": [
+      "54mm-192",
+      "54mm-313",
+      "54mm-455",
+      "54mm-562"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-54/1706": {
+    "designation": "RMS-54/1706",
+    "type": "RMS",
+    "diameter": 54,
+    "motorDiameter": 54,
+    "motorLength": 410,
+    "maxTotalImpulse": 1706,
+    "maxGrains": 4,
+    "hardwareWeightG": 595.1,
+    "compatibleNozzles": [
+      "54mm-192",
+      "54mm-313",
+      "54mm-455",
+      "54mm-562"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-54/2560": {
+    "designation": "RMS-54/2560",
+    "type": "RMS",
+    "diameter": 54,
+    "motorDiameter": 54,
+    "motorLength": 568,
+    "maxTotalImpulse": 2560,
+    "maxGrains": 6,
+    "hardwareWeightG": 805.3,
+    "compatibleNozzles": [
+      "54mm-192",
+      "54mm-313",
+      "54mm-455",
+      "54mm-562"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-54/2800": {
+    "designation": "RMS-54/2800",
+    "type": "RMS",
+    "diameter": 54,
+    "motorDiameter": 54,
+    "motorLength": 627,
+    "maxTotalImpulse": 2800,
+    "maxGrains": 6,
+    "hardwareWeightG": 951.7,
+    "compatibleNozzles": [
+      "54mm-192",
+      "54mm-313",
+      "54mm-455",
+      "54mm-562"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-75/1280": {
+    "designation": "RMS-75/1280",
+    "type": "RMS",
+    "diameter": 75,
+    "motorDiameter": 75,
+    "motorLength": 260,
+    "maxTotalImpulse": 1280,
+    "maxGrains": 2,
+    "hardwareWeightG": 1244.8,
+    "compatibleNozzles": [
+      "75mm-485",
+      "75mm-685"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-75/2560": {
+    "designation": "RMS-75/2560",
+    "type": "RMS",
+    "diameter": 75,
+    "motorDiameter": 75,
+    "motorLength": 396,
+    "maxTotalImpulse": 2560,
+    "maxGrains": 4,
+    "hardwareWeightG": 1503.0,
+    "compatibleNozzles": [
+      "75mm-485",
+      "75mm-685"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-75/3840": {
+    "designation": "RMS-75/3840",
+    "type": "RMS",
+    "diameter": 75,
+    "motorDiameter": 75,
+    "motorLength": 531,
+    "maxTotalImpulse": 3840,
+    "maxGrains": 6,
+    "hardwareWeightG": 1857.9,
+    "compatibleNozzles": [
+      "75mm-485",
+      "75mm-685"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-75/5120": {
+    "designation": "RMS-75/5120",
+    "type": "RMS",
+    "diameter": 75,
+    "motorDiameter": 75,
+    "motorLength": 665,
+    "maxTotalImpulse": 5120,
+    "maxGrains": 8,
+    "hardwareWeightG": 2169.0,
+    "compatibleNozzles": [
+      "75mm-485",
+      "75mm-685"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-75/6400": {
+    "designation": "RMS-75/6400",
+    "type": "RMS",
+    "diameter": 75,
+    "motorDiameter": 75,
+    "motorLength": 801,
+    "maxTotalImpulse": 6400,
+    "maxGrains": 10,
+    "hardwareWeightG": 2369.1,
+    "compatibleNozzles": [
+      "75mm-485",
+      "75mm-685"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-75/7680": {
+    "designation": "RMS-75/7680",
+    "type": "RMS",
+    "diameter": 75,
+    "motorDiameter": 75,
+    "motorLength": 923,
+    "maxTotalImpulse": 7680,
+    "maxGrains": 12,
+    "hardwareWeightG": 2299,
+    "compatibleNozzles": [
+      "75mm-485",
+      "75mm-685"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-75/10240": {
+    "designation": "RMS-75/10240",
+    "type": "RMS",
+    "diameter": 75,
+    "motorDiameter": 75,
+    "motorLength": 1194,
+    "maxTotalImpulse": 10240,
+    "maxGrains": 16,
+    "hardwareWeightG": 3783.2,
+    "compatibleNozzles": [
+      "75mm-485",
+      "75mm-685"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-98/2560": {
+    "designation": "RMS-98/2560",
+    "type": "RMS",
+    "diameter": 98,
+    "motorDiameter": 98,
+    "motorLength": 275,
+    "maxTotalImpulse": 2560,
+    "maxGrains": 2,
+    "hardwareWeightG": 1658.2,
+    "compatibleNozzles": [
+      "98mm-344",
+      "98mm-734",
+      "98mm-1000"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-98/5120": {
+    "designation": "RMS-98/5120",
+    "type": "RMS",
+    "diameter": 98,
+    "motorDiameter": 98,
+    "motorLength": 427,
+    "maxTotalImpulse": 5120,
+    "maxGrains": 4,
+    "hardwareWeightG": 2366.6,
+    "compatibleNozzles": [
+      "98mm-344",
+      "98mm-734",
+      "98mm-1000"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-98/7680": {
+    "designation": "RMS-98/7680",
+    "type": "RMS",
+    "diameter": 98,
+    "motorDiameter": 98,
+    "motorLength": 597,
+    "maxTotalImpulse": 7680,
+    "maxGrains": 6,
+    "hardwareWeightG": 2963.6,
+    "compatibleNozzles": [
+      "98mm-344",
+      "98mm-734",
+      "98mm-1000"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-98/10240": {
+    "designation": "RMS-98/10240",
+    "type": "RMS",
+    "diameter": 98,
+    "motorDiameter": 98,
+    "motorLength": 732,
+    "maxTotalImpulse": 10240,
+    "maxGrains": 8,
+    "hardwareWeightG": 3533.6,
+    "compatibleNozzles": [
+      "98mm-344",
+      "98mm-734",
+      "98mm-1000"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-98/15360": {
+    "designation": "RMS-98/15360",
+    "type": "RMS",
+    "diameter": 98,
+    "motorDiameter": 98,
+    "motorLength": 1046,
+    "maxTotalImpulse": 15360,
+    "maxGrains": 12,
+    "hardwareWeightG": 4591.1,
+    "compatibleNozzles": [
+      "98mm-344",
+      "98mm-734",
+      "98mm-1000"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  },
+  "RMS-98/20480": {
+    "designation": "RMS-98/20480",
+    "type": "RMS",
+    "diameter": 98,
+    "motorDiameter": 98,
+    "motorLength": 1358,
+    "maxTotalImpulse": 20480,
+    "maxGrains": 16,
+    "hardwareWeightG": 6575,
+    "compatibleNozzles": [
+      "98mm-344",
+      "98mm-734",
+      "98mm-1000"
+    ],
+    "assemblyDrawingRef": "https://www.rocketmotorparts.com/page/motor-assembly-drawings"
+  }
+}

@@ -33,7 +33,24 @@ class CsvExporter(Exporter):
 
     def doConversion(self, path, config):
         with open(path, 'w') as outFile:
-            outFile.write(self.manager.simRes.getCSV(self.manager.preferences, config[0], config[1]))
+            csvContent = self.manager.simRes.getCSV(self.manager.preferences, config[0], config[1])
+            # Append hardware info as a comment block at the end
+            motor = self.manager.simRes.motor
+            hwWeight = motor.getHardwareWeight()
+            if hwWeight > 0:
+                csvContent += "\n# Hardware Information\n"
+                if motor.hardwareCase is not None:
+                    csvContent += "# Case: {}\n".format(motor.hardwareCase.get("designation", ""))
+                    csvContent += "# Case Weight: {:.1f} g\n".format(
+                        motor.hardwareCase.get("hardwareWeightKg", 0) * 1000)
+                if motor.hardwareNozzle is not None:
+                    csvContent += "# Nozzle: {}\n".format(motor.hardwareNozzle.get("partNumber", ""))
+                    csvContent += "# Nozzle Weight: {:.1f} g\n".format(
+                        motor.hardwareNozzle.get("weightKg", 0) * 1000)
+                csvContent += "# Total Hardware Weight: {:.1f} g\n".format(hwWeight * 1000)
+                propMass = self.manager.simRes.getPropellantMass()
+                csvContent += "# Total Motor Weight: {:.1f} g\n".format((propMass + hwWeight) * 1000)
+            outFile.write(csvContent)
 
     def checkRequirements(self):
         return self.manager.simRes is not None

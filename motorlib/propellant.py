@@ -28,8 +28,20 @@ class Propellant(PropertyCollection):
         self.props['name'] = StringProperty('Name')
         self.props['density'] = FloatProperty('Density', 'kg/m^3', 1, 10000)
         self.props['tabs'] = TabularProperty('Properties', PropellantTab)
+        self.ingredients = []  # List of {"name": str, "percentage": float}
         if propDict is not None:
             self.setProperties(propDict)
+
+    def setProperties(self, props):
+        super().setProperties(props)
+        if 'ingredients' in props:
+            self.ingredients = list(props['ingredients'])
+
+    def getProperties(self, props=None):
+        result = super().getProperties(props)
+        if self.ingredients:
+            result['ingredients'] = list(self.ingredients)
+        return result
 
     def getCStar(self, pressure):
         """Returns the propellant's characteristic velocity."""

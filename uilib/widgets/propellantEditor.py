@@ -9,9 +9,11 @@ class PropellantEditor(CollectionEditor):
         self.propellantPreview = PropellantPreviewWidget()
         self.propellantPreview.hide()
         self.stats.addWidget(self.propellantPreview)
+        self._currentIngredients = []
 
     def cleanup(self):
         self.propellantPreview.hide()
+        self._currentIngredients = []
         super().cleanup()
 
     def setPreferences(self, pref):
@@ -19,9 +21,13 @@ class PropellantEditor(CollectionEditor):
         self.propellantPreview.setPreferences(self.preferences)
 
     def propertyUpdate(self):
-        previewProp = Propellant(self.getProperties())
+        props = self.getProperties()
+        if self._currentIngredients:
+            props['ingredients'] = self._currentIngredients
+        previewProp = Propellant(props)
         self.propellantPreview.loadPropellant(previewProp)
 
     def loadProperties(self, obj):
+        self._currentIngredients = getattr(obj, 'ingredients', [])
         super().loadProperties(obj)
         self.propellantPreview.show()

@@ -31,6 +31,28 @@ class EngExportMenu(QDialog):
         newSettings = EngSettings()
         designation = self.exporter.manager.simRes.getDesignation()
         newSettings.setProperties({'designation': designation})
+        motor = self.exporter.manager.simRes.motor
+        # Pre-populate hardware mass from motor's assigned hardware if available
+        hwWeight = motor.getHardwareWeight()
+        if hwWeight > 0:
+            newSettings.setProperties({'hardwareMass': hwWeight})
+        # Pre-populate motor diameter and length from hardware case catalog data
+        if motor.hardwareCase is not None:
+            caseDia = motor.hardwareCase.get('motorDiameter', 0)
+            if caseDia > 0:
+                newSettings.setProperties({'diameter': caseDia / 1000.0})
+            caseLen = motor.hardwareCase.get('motorLength', 0)
+            if caseLen > 0:
+                newSettings.setProperties({'length': caseLen / 1000.0})
+        else:
+            # Fallback to grain dimensions if no hardware case assigned
+            if motor.grains:
+                grainDiameter = max(g.getProperty('diameter') for g in motor.grains)
+                if grainDiameter > 0:
+                    newSettings.setProperties({'diameter': grainDiameter})
+                totalLength = sum(g.getProperty('length') for g in motor.grains)
+                if totalLength > 0:
+                    newSettings.setProperties({'length': totalLength})
         self.ui.motorStats.setPreferences(self.exporter.manager.preferences)
         self.ui.motorStats.loadProperties(newSettings)
         if super().exec():

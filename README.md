@@ -6,7 +6,7 @@ Overview
 --------
 openMotor is an open-source internal ballistics simulator for rocket motor experimenters. The software estimates a rocket motor's chamber pressure and thrust based on propellant properties, grain geometry, and nozzle specifications. It uses the Fast Marching Method to determine how a propellant grain regresses, which allows the use of arbitrary core geometries.
 
-Current Features:
+OpenMotor Vibes is an open-source internal ballistics simulator for rocket motor experimenters. The software estimates a rocket motor's chamber pressure and thrust based on propellant properties, grain geometry, and nozzle specifications. It uses the Fast Marching Method to determine how a propellant grain regresses, which allows the use of arbitrary core geometries.
 * Metric and imperial units
 * Support for common grain geometries such as BATES, Finocyl, Star and more
 * Loading custom grain geometry from DXF files
@@ -26,6 +26,7 @@ Download
 You can download the latest version for your system [here](https://github.com/reilleya/openMotor/releases/latest). From there, just unzip the file and run it. Alternatively, you can run it from source code to get the latest features. openMotor is avaliable on the AUR as `openmotor` and on debian apt as `openmotor`
 
 Building from Source
+You can download the latest version for your system [here](https://github.com/JackPoehlman/openmotor-vibes/releases/latest). From there, just unzip the file and run it. Alternatively, you can run it from source code to get the latest features. OpenMotor Vibes is available on the AUR as `openmotor` and on debian apt as `openmotor`
 --------------------
 The program is currently being developed using python 3.10. The dependencies are outlined in `requirements.txt`, the main ones include `PyQt6`, `matplot`, `numpy`, `scipy`, `scikit-fmm`, and `scikit-image`. Because the PyQt6 bindings are used for the GUI, Qt6 must also be installed.
 
@@ -34,7 +35,8 @@ The easiest way to build/run from source code is to clone the repository and ins
 $ git clone https://github.com/reilleya/openMotor
 $ cd openMotor
 $ python3 -m venv .venv
-$ source .venv/bin/activate
+$ git clone https://github.com/JackPoehlman/openmotor-vibes
+$ cd openmotor-vibes
 $ pip install -r requirements.txt
 ```
 If you are using a version of python that does not have a prebuilt version of one of the dependencies, the `pip` command above might fail with an error like:
@@ -79,13 +81,13 @@ The remaining user information, like propellant data and preferences, is stored 
 
 License
 -------
-openMotor is released under the GNU GPL v3 license. The source code is distributed so you can build cool stuff with it, and so you don't have to trust the calculations are being done correctly. Check for yourself (and file an issue ticket!) if you doubt the results.
+OpenMotor Vibes uses [YAML](https://en.wikipedia.org/wiki/YAML) for data storage. Motor files have the extension `.ric` to differentiate them, but internally they are YAML and can be edited in a text editor if desired. The recommended MIME type for these files is `application/vnd.openmotor+yaml`.
 
 Contributing
 ------------
 As openMotor is open source, one of the goals of the project is to have as many eyes on the code as possible. I believe this is the best way to avoid bugs and also the easiest way to get new features added to the software. If you have ideas on how to improve the program or find an error, please open an issue ticket for discussion or file a pull request if possible.
 
-Attribution
+OpenMotor Vibes is released under the GNU GPL v3 license. The source code is distributed so you can build cool stuff with it, and so you don't have to trust the calculations are being done correctly. Check for yourself (and file an issue ticket!) if you doubt the results.
 -----------
 This is a fork of the original [openMotor](https://github.com/reilleya/openMotor) project created by [reilleya](https://github.com/reilleya). The openmotor-vibes fork maintains the same GPLv3 license as the original project and is periodically synced with upstream releases through rebase. See [CHANGELOG.md](CHANGELOG.md) for a detailed list of modifications and enhancements made in this fork.
 

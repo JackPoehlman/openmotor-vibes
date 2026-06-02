@@ -1,5 +1,8 @@
 import numpy as np
-from ._find_perimeter_cy import _get_perimeter
+try:
+    from ._find_perimeter_cy import _get_perimeter
+except ImportError:
+    from ._find_perimeter_py import _get_perimeter
 from collections import deque
 
 def find_perimeter(image, level,

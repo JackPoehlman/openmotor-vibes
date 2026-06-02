@@ -1,12 +1,15 @@
 import sys
 from threading import Thread
 
-from PyQt6.QtWidgets import QMainWindow, QTableWidgetItem, QHeaderView
+from PyQt6.QtWidgets import QMainWindow, QTableWidgetItem, QHeaderView, QMessageBox
 from PyQt6.QtCore import Qt
+from PyQt6.QtGui import QAction
 
 import motorlib
 import uilib.widgets.aboutDialog
 from uilib.views.MainWindow_ui import Ui_MainWindow
+from uilib.widgets.grainPresetPicker import GrainPresetPicker
+from uilib.widgets.hardwareCatalogBrowser import HardwareCatalogBrowser
 
 class Window(QMainWindow):
     def __init__(self, app):
@@ -55,11 +58,11 @@ class Window(QMainWindow):
 
     def updateWindowTitle(self, name, saved):
         if not name and saved:
-            self.setWindowTitle('openMotor')
+            self.setWindowTitle('OpenMotor Vibes')
             return
         unsavedStr = '*' if not saved else ''
         displayName = name if name is not None else ''
-        self.setWindowTitle('openMotor - {}{}'.format(displayName, unsavedStr))
+        self.setWindowTitle('OpenMotor Vibes - {}{}'.format(displayName, unsavedStr))
 
     def setupMotorStats(self):
         for label in self.motorStatLabels:
@@ -78,6 +81,7 @@ class Window(QMainWindow):
     def setupGrainAddition(self):
         self.ui.comboBoxGrainGeometry.addItems(motorlib.grains.grainTypes.keys())
         self.ui.pushButtonAddGrain.pressed.connect(self.addGrain)
+        self.ui.pushButtonRunSimulation.pressed.connect(self.runSimulation)
 
     def setupMenu(self):
         # File menu
@@ -98,8 +102,31 @@ class Window(QMainWindow):
         self.ui.actionPreferences.triggered.connect(self.app.preferencesManager.showMenu)
         self.ui.actionPropellantEditor.triggered.connect(self.app.propellantManager.showMenu)
 
+        actionImportPropLibrary = QAction("Import Propellant Library...", self)
+        actionImportPropLibrary.setStatusTip("Import propellant formulas from the bundled library")
+        actionImportPropLibrary.triggered.connect(self.importPropellantLibrary)
+        self.ui.menuEdit.addAction(actionImportPropLibrary)
+
         # Sim
         self.ui.actionRunSimulation.triggered.connect(self.runSimulation)
+
+        # Hardware menu (new)
+        self.menuHardware = self.menuBar().addMenu("Hardware")
+        actionGrainPresets = QAction("Grain Presets...", self)
+        actionGrainPresets.setStatusTip("Browse and apply standard grain configurations")
+        actionGrainPresets.triggered.connect(self.showGrainPresetPicker)
+        self.menuHardware.addAction(actionGrainPresets)
+
+        actionHardwareCatalog = QAction("Motor Case Catalog...", self)
+        actionHardwareCatalog.setStatusTip("Browse motor cases and nozzles, assign hardware to motor")
+        actionHardwareCatalog.triggered.connect(self.showHardwareCatalog)
+        self.menuHardware.addAction(actionHardwareCatalog)
+
+        self.menuHardware.addSeparator()
+        actionClearHardware = QAction("Clear Assigned Hardware", self)
+        actionClearHardware.setStatusTip("Remove hardware case and nozzle assignments from current motor")
+        actionClearHardware.triggered.connect(self.clearHardware)
+        self.menuHardware.addAction(actionClearHardware)
 
         # Help
         self.ui.actionAboutOpenMotor.triggered.connect(self.aboutDialog.show)
@@ -185,7 +212,10 @@ class Window(QMainWindow):
 
     def updateGrainTable(self):
         cm = self.app.fileManager.getCurrentMotor()
-        self.ui.tableWidgetGrainList.setRowCount(len(cm.grains) + 2)
+        # Extra rows: Nozzle, Config, and optionally Hardware
+        hasHardware = cm.hardwareCase is not None or cm.hardwareNozzle is not None
+        extraRows = 3 if hasHardware else 2
+        self.ui.tableWidgetGrainList.setRowCount(len(cm.grains) + extraRows)
         lengthUnit = self.app.preferencesManager.preferences.units.getProperty('m')
         for gid, grain in enumerate(cm.grains):
             self.ui.tableWidgetGrainList.setItem(gid, 0, QTableWidgetItem(grain.geomName))
@@ -196,6 +226,21 @@ class Window(QMainWindow):
 
         self.ui.tableWidgetGrainList.setItem(len(cm.grains) + 1, 0, QTableWidgetItem('Config'))
         self.ui.tableWidgetGrainList.setItem(len(cm.grains) + 1, 1, QTableWidgetItem('-'))
+
+        if hasHardware:
+            hwParts = []
+            if cm.hardwareCase is not None:
+                hwParts.append(cm.hardwareCase.get("designation", ""))
+            if cm.hardwareNozzle is not None:
+                hwParts.append(cm.hardwareNozzle.get("partNumber", ""))
+            hwWeight = cm.getHardwareWeight()
+            hwDetail = ", ".join(hwParts)
+            if hwWeight > 0:
+                massUnit = self.app.preferencesManager.preferences.units.getProperty('kg')
+                hwDetail += " ({})".format(
+                    '{:.2f} {}'.format(motorlib.units.convert(hwWeight, 'kg', massUnit), massUnit))
+            self.ui.tableWidgetGrainList.setItem(len(cm.grains) + 2, 0, QTableWidgetItem('Hardware'))
+            self.ui.tableWidgetGrainList.setItem(len(cm.grains) + 2, 1, QTableWidgetItem(hwDetail))
 
     def toggleGrainEditButtons(self, state, grainTable=True):
         if grainTable:
@@ -289,6 +334,76 @@ class Window(QMainWindow):
         self.checkGrainSelection()
         self.toggleGrainButtons(False)
 
+    def showGrainPresetPicker(self):
+        """Open the grain preset picker dialog. If a preset is selected, add a grain
+        with those dimensions to the current motor."""
+        picker = GrainPresetPicker(self)
+        if picker.exec():
+            preset = picker.getSelectedPreset()
+            if preset is not None:
+                cm = self.app.fileManager.getCurrentMotor()
+                # Create the appropriate grain type
+                grainTypeName = preset.grainType
+                if grainTypeName in motorlib.grains.grainTypes:
+                    newGrain = motorlib.grains.grainTypes[grainTypeName]()
+                else:
+                    newGrain = motorlib.grains.grainTypes["BATES"]()
+                # Apply preset dimensions
+                from motorlib.grainPresets import GrainPresetLibrary
+                lib = GrainPresetLibrary()
+                lib.applyPreset(preset, newGrain)
+                cm.grains.append(newGrain)
+                self.app.fileManager.addNewMotorHistory(cm)
+                self.updateGrainTable()
+                self.ui.tableWidgetGrainList.selectRow(len(cm.grains) - 1)
+                self.checkGrainSelection()
+
+    def showHardwareCatalog(self):
+        """Open the hardware catalog browser. If hardware is selected, assign it
+        to the current motor."""
+        browser = HardwareCatalogBrowser(self)
+        if browser.exec():
+            cm = self.app.fileManager.getCurrentMotor()
+            case = browser.getSelectedCase()
+            nozzle = browser.getSelectedNozzle()
+            if case is not None:
+                cm.hardwareCase = {
+                    "designation": case.designation,
+                    "type": case.type,
+                    "diameter": case.diameter,
+                    "motorDiameter": case.motorDiameter,
+                    "motorLength": case.motorLength,
+                    "maxTotalImpulse": case.maxTotalImpulse,
+                    "maxGrains": case.maxGrains,
+                    "hardwareWeightKg": case.getHardwareWeightKg(),
+                }
+            if nozzle is not None:
+                cm.hardwareNozzle = {
+                    "partNumber": nozzle.partNumber,
+                    "description": nozzle.description,
+                    "motorDiameter": nozzle.motorDiameter,
+                    "throatDiameter": nozzle.throatDiameter,
+                    "exitDiameter": nozzle.exitDiameter,
+                    "weightKg": nozzle.getWeightKg(),
+                }
+                # Apply the catalog nozzle dimensions to the motor's actual nozzle
+                cm.nozzle.setProperty('throat', nozzle.throatDiameter)
+                if nozzle.exitDiameter is not None and nozzle.exitDiameter > 0:
+                    cm.nozzle.setProperty('exit', nozzle.exitDiameter)
+            self.app.fileManager.addNewMotorHistory(cm)
+            self.updateGrainTable()
+            # Re-select the nozzle row in the grain table so the editor refreshes
+            self.ui.tableWidgetGrainList.selectRow(len(cm.grains))
+            self.editGrain()
+
+    def clearHardware(self):
+        """Remove hardware assignments from the current motor."""
+        cm = self.app.fileManager.getCurrentMotor()
+        cm.hardwareCase = None
+        cm.hardwareNozzle = None
+        self.app.fileManager.addNewMotorHistory(cm)
+        self.updateGrainTable()
+
     def formatMotorStat(self, quantity, inUnit):
         convUnit = self.app.preferencesManager.preferences.getUnit(inUnit)
         return '{:.2f} {}'.format(motorlib.units.convert(quantity, inUnit, convUnit), convUnit)
@@ -366,6 +481,21 @@ class Window(QMainWindow):
         self.checkGrainSelection()
         self.updatePropBoxSelection()
         self.ui.motorEditor.close()
+
+    def importPropellantLibrary(self):
+        """Import all propellants from the bundled library, skipping duplicates."""
+        libProps = self.app.propellantManager.getLibraryPropellants()
+        if not libProps:
+            QMessageBox.information(self, "Import Library", "No propellant library file found.")
+            return
+        count = self.app.propellantManager.importFromLibrary(libProps)
+        if count > 0:
+            self.propListChanged()
+            QMessageBox.information(self, "Import Library",
+                f"Imported {count} new propellant(s). {len(libProps) - count} already existed.")
+        else:
+            QMessageBox.information(self, "Import Library",
+                "All library propellants are already in your collection.")
 
     def newMotor(self):
         self.app.fileManager.newFile()

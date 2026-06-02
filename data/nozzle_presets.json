@@ -1,0 +1,202 @@
+[
+  {
+    "partNumber": "24mm-086",
+    "description": "24mm Nozzle, 0.086\" throat",
+    "motorDiameter": 24,
+    "outerDiameter": 0.02197,
+    "throatDiameter": 0.002184,
+    "exitDiameter": 0.004826,
+    "weight": 0.005,
+    "material": "glass/phenolic"
+  },
+  {
+    "partNumber": "24mm-104-RMS",
+    "description": "24mm RMS Nozzle, 0.104\" throat",
+    "motorDiameter": 24,
+    "outerDiameter": 0.02052,
+    "throatDiameter": 0.002642,
+    "exitDiameter": 0.00635,
+    "weight": 0.005,
+    "material": "glass/phenolic"
+  },
+  {
+    "partNumber": "24mm-104",
+    "description": "24mm Nozzle, 0.104\" throat",
+    "motorDiameter": 24,
+    "outerDiameter": 0.02197,
+    "throatDiameter": 0.002642,
+    "exitDiameter": 0.00635,
+    "weight": 0.006,
+    "material": "glass/phenolic"
+  },
+  {
+    "partNumber": "24mm-141",
+    "description": "24mm Nozzle, 0.141\" throat",
+    "motorDiameter": 24,
+    "outerDiameter": 0.02197,
+    "throatDiameter": 0.003581,
+    "exitDiameter": 0.007950,
+    "weight": 0.005,
+    "material": "glass/phenolic"
+  },
+  {
+    "partNumber": "29mm-104",
+    "description": "29/38mm Nozzle, 0.104\" throat",
+    "motorDiameter": 29,
+    "outerDiameter": 0.02540,
+    "throatDiameter": 0.002642,
+    "exitDiameter": 0.00635,
+    "weight": 0.010,
+    "material": "glass/phenolic"
+  },
+  {
+    "partNumber": "29mm-141",
+    "description": "29/38mm Nozzle, 0.141\" throat",
+    "motorDiameter": 29,
+    "outerDiameter": 0.02540,
+    "throatDiameter": 0.003581,
+    "exitDiameter": 0.007950,
+    "weight": 0.010,
+    "material": "glass/phenolic"
+  },
+  {
+    "partNumber": "29mm-180",
+    "description": "29/38mm Nozzle, 0.180\" throat",
+    "motorDiameter": 29,
+    "outerDiameter": 0.02540,
+    "throatDiameter": 0.004572,
+    "exitDiameter": 0.011125,
+    "weight": 0.008,
+    "material": "glass/phenolic"
+  },
+  {
+    "partNumber": "29mm-291",
+    "description": "29/38mm Nozzle, 0.291\" throat",
+    "motorDiameter": 29,
+    "outerDiameter": 0.02540,
+    "throatDiameter": 0.007391,
+    "exitDiameter": 0.017475,
+    "weight": 0.010,
+    "material": "glass/phenolic"
+  },
+  {
+    "partNumber": "29mm-298",
+    "description": "29/38mm + 54mm Nozzle, 0.298\" throat",
+    "motorDiameter": 29,
+    "outerDiameter": 0.02540,
+    "throatDiameter": 0.007569,
+    "exitDiameter": null,
+    "weight": 0.010,
+    "material": "glass/phenolic"
+  },
+  {
+    "partNumber": "38mm-137",
+    "description": "38mm Nozzle, 0.137\" throat",
+    "motorDiameter": 38,
+    "outerDiameter": 0.03322,
+    "throatDiameter": 0.003480,
+    "exitDiameter": 0.007341,
+    "weight": null,
+    "material": "glass/phenolic"
+  },
+  {
+    "partNumber": "38mm-375",
+    "description": "38mm Large Nozzle, 0.375\" throat",
+    "motorDiameter": 38,
+    "outerDiameter": 0.03480,
+    "throatDiameter": 0.009525,
+    "exitDiameter": 0.019050,
+    "weight": 0.027,
+    "material": "glass/phenolic"
+  },
+  {
+    "partNumber": "54mm-192",
+    "description": "54mm Nozzle, 0.192\" throat",
+    "motorDiameter": 54,
+    "outerDiameter": 0.04750,
+    "throatDiameter": 0.004877,
+    "exitDiameter": 0.012700,
+    "weight": 0.042,
+    "material": "glass/phenolic"
+  },
+  {
+    "partNumber": "54mm-313",
+    "description": "54mm Nozzle, 0.313\" throat",
+    "motorDiameter": 54,
+    "outerDiameter": 0.05042,
+    "throatDiameter": 0.007950,
+    "exitDiameter": 0.020625,
+    "weight": 0.055,
+    "material": "glass/phenolic"
+  },
+  {
+    "partNumber": "54mm-455",
+    "description": "54mm Nozzle, 0.455\" throat",
+    "motorDiameter": 54,
+    "outerDiameter": 0.05042,
+    "throatDiameter": 0.011557,
+    "exitDiameter": 0.031750,
+    "weight": 0.085,
+    "material": "glass/phenolic"
+  },
+  {
+    "partNumber": "54mm-562",
+    "description": "54mm Nozzle, 0.562\" throat",
+    "motorDiameter": 54,
+    "outerDiameter": 0.05042,
+    "throatDiameter": 0.014275,
+    "exitDiameter": 0.031750,
+    "weight": 0.085,
+    "material": "glass/phenolic"
+  },
+  {
+    "partNumber": "75mm-485",
+    "description": "75mm Nozzle, 0.485\" throat",
+    "motorDiameter": 75,
+    "outerDiameter": 0.06934,
+    "throatDiameter": 0.012319,
+    "exitDiameter": 0.031750,
+    "weight": 0.217,
+    "material": "glass/phenolic"
+  },
+  {
+    "partNumber": "75mm-685",
+    "description": "75mm Nozzle, 0.685\" throat",
+    "motorDiameter": 75,
+    "outerDiameter": 0.06934,
+    "throatDiameter": 0.017399,
+    "exitDiameter": 0.047625,
+    "weight": 0.267,
+    "material": "glass/phenolic"
+  },
+  {
+    "partNumber": "98mm-344",
+    "description": "98mm Nozzle, 0.344\" throat",
+    "motorDiameter": 98,
+    "outerDiameter": 0.09192,
+    "throatDiameter": 0.008738,
+    "exitDiameter": 0.022860,
+    "weight": 0.261,
+    "material": "glass/phenolic"
+  },
+  {
+    "partNumber": "98mm-734",
+    "description": "98mm Nozzle, 0.734\" throat",
+    "motorDiameter": 98,
+    "outerDiameter": 0.09192,
+    "throatDiameter": 0.018644,
+    "exitDiameter": 0.044450,
+    "weight": 0.286,
+    "material": "glass/phenolic"
+  },
+  {
+    "partNumber": "98mm-1000",
+    "description": "98mm Nozzle, 1.000\" throat",
+    "motorDiameter": 98,
+    "outerDiameter": 0.09192,
+    "throatDiameter": 0.025400,
+    "exitDiameter": 0.069520,
+    "weight": 0.549,
+    "material": "glass/phenolic"
+  }
+]

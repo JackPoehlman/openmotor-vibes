@@ -1,7 +1,7 @@
 import math
 
-from PyQt6.QtWidgets import QWidget, QVBoxLayout, QLineEdit, QCheckBox
-from PyQt6.QtWidgets import QDoubleSpinBox, QSpinBox, QComboBox
+from PyQt6.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLineEdit, QCheckBox
+from PyQt6.QtWidgets import QDoubleSpinBox, QSpinBox, QComboBox, QSlider
 from PyQt6.QtCore import pyqtSignal, Qt
 
 import motorlib
@@ -39,8 +39,29 @@ class PropertyEditor(QWidget):
             self.editor.setSingleStep(10 ** (int(math.log(convMax, 10) - 4)))
 
             self.editor.setValue(motorlib.units.convert(self.prop.getValue(), prop.unit, self.dispUnit))
-            self.editor.valueChanged.connect(self.valueChanged.emit)
-            self.layout().addWidget(self.editor)
+
+            # Add slider for float properties — uses a local window centered on
+            # the current value so the slider provides fine-grained control even
+            # when the property's full min/max range is very large.
+            self.slider = QSlider(Qt.Orientation.Horizontal)
+            self._sliderResolution = 10000
+            self._fullMin = convMin
+            self._fullMax = convMax
+            # Window = 10% of full range, at least 1 display-unit wide
+            self._windowHalf = max((convMax - convMin) * 0.05, 0.5)
+            self.slider.setRange(0, self._sliderResolution)
+            self._recentreSlider(self.editor.value())
+
+            self._updatingFromSlider = False
+            self._updatingFromSpinbox = False
+            self.slider.valueChanged.connect(self._sliderChanged)
+            self.editor.valueChanged.connect(self._spinboxChanged)
+
+            row = QHBoxLayout()
+            row.setSpacing(6)
+            row.addWidget(self.editor, 1)
+            row.addWidget(self.slider, 1)
+            self.layout().addLayout(row)
 
         elif isinstance(prop, motorlib.properties.IntProperty):
             self.editor = QSpinBox()
@@ -115,3 +136,45 @@ class PropertyEditor(QWidget):
             return self.editor.getTabs()
 
         return None
+
+    def _recentreSlider(self, centre):
+        """Set the slider window to centre ± windowHalf, clamped to property bounds."""
+        self._sliderMin = max(self._fullMin, centre - self._windowHalf)
+        self._sliderMax = min(self._fullMax, centre + self._windowHalf)
+        # Avoid degenerate zero-width window
+        if self._sliderMax <= self._sliderMin:
+            self._sliderMax = self._sliderMin + self._windowHalf
+        self.slider.blockSignals(True)
+        self.slider.setValue(self._valueToSlider(centre))
+        self.slider.blockSignals(False)
+
+    def _valueToSlider(self, value):
+        """Convert a spinbox value to a slider position."""
+        if self._sliderMax == self._sliderMin:
+            return 0
+        fraction = (value - self._sliderMin) / (self._sliderMax - self._sliderMin)
+        return int(round(max(0.0, min(1.0, fraction)) * self._sliderResolution))
+
+    def _sliderToValue(self, pos):
+        """Convert a slider position to a spinbox value."""
+        fraction = pos / self._sliderResolution
+        return self._sliderMin + fraction * (self._sliderMax - self._sliderMin)
+
+    def _sliderChanged(self, pos):
+        """Handle slider movement — update spinbox."""
+        if self._updatingFromSpinbox:
+            return
+        self._updatingFromSlider = True
+        self.editor.setValue(self._sliderToValue(pos))
+        self._updatingFromSlider = False
+        self.valueChanged.emit()
+
+    def _spinboxChanged(self, value):
+        """Handle spinbox value change — update slider and re-centre window."""
+        if self._updatingFromSlider:
+            return
+        self._updatingFromSpinbox = True
+        # Re-centre the window on the new value typed into the spinbox
+        self._recentreSlider(value)
+        self._updatingFromSpinbox = False
+        self.valueChanged.emit()

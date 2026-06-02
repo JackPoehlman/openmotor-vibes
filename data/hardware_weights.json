@@ -1,0 +1,4186 @@
+{
+  "RMS-18/20": {
+    "designation": "RMS-18/20",
+    "type": "RMS",
+    "diameter": 18,
+    "maxLength": 72,
+    "maxTotalImpulse": 20,
+    "avgHardwareWeightG": 20.7,
+    "hardwareWeightStdG": 2.4,
+    "sampleCount": 4,
+    "motors": [
+      "C3.4T",
+      "D2.3T",
+      "D24T",
+      "D13W"
+    ],
+    "entries": [
+      {
+        "designation": "C3.4T",
+        "commonName": "C3",
+        "totalWeightG": 23.900000000000002,
+        "propWeightG": 5.2,
+        "hardwareWeightG": 18.7,
+        "diameter": 18,
+        "length": 72,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      },
+      {
+        "designation": "D2.3T",
+        "commonName": "D2",
+        "totalWeightG": 29.3,
+        "propWeightG": 10.7,
+        "hardwareWeightG": 18.6,
+        "diameter": 18,
+        "length": 72,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      },
+      {
+        "designation": "D24T",
+        "commonName": "D24",
+        "totalWeightG": 32,
+        "propWeightG": 8.7,
+        "hardwareWeightG": 23.3,
+        "diameter": 18,
+        "length": 70,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      },
+      {
+        "designation": "D13W",
+        "commonName": "D13",
+        "totalWeightG": 31.9,
+        "propWeightG": 9.799999999999999,
+        "hardwareWeightG": 22.1,
+        "diameter": 18,
+        "length": 70,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "SU-D10W": {
+    "designation": "SU-D10W",
+    "type": "SU",
+    "diameter": 18,
+    "maxLength": 70,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 16.1,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "D10W"
+    ],
+    "entries": [
+      {
+        "designation": "D10W",
+        "commonName": "D10",
+        "totalWeightG": 25.9,
+        "propWeightG": 9.799999999999999,
+        "hardwareWeightG": 16.1,
+        "diameter": 18,
+        "length": 70,
+        "type": "SU",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "SU-D21T": {
+    "designation": "SU-D21T",
+    "type": "SU",
+    "diameter": 18,
+    "maxLength": 70,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 15.4,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "D21T"
+    ],
+    "entries": [
+      {
+        "designation": "D21T",
+        "commonName": "D21",
+        "totalWeightG": 25,
+        "propWeightG": 9.6,
+        "hardwareWeightG": 15.4,
+        "diameter": 18,
+        "length": 70,
+        "type": "SU",
+        "propInfo": "Blue Thunder"
+      }
+    ]
+  },
+  "RMS-R/C-24/20-40": {
+    "designation": "RMS-R/C-24/20-40",
+    "type": "RMS",
+    "diameter": 24,
+    "maxLength": 70,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 30.1,
+    "hardwareWeightStdG": 1.6,
+    "sampleCount": 4,
+    "motors": [
+      "D7-RCT",
+      "E7-RCT",
+      "E12-RCJ",
+      "E6-RCT"
+    ],
+    "entries": [
+      {
+        "designation": "D7-RCT",
+        "commonName": "D7",
+        "totalWeightG": 42.2,
+        "propWeightG": 10.5,
+        "hardwareWeightG": 31.7,
+        "diameter": 24,
+        "length": 70,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      },
+      {
+        "designation": "E7-RCT",
+        "commonName": "E7",
+        "totalWeightG": 48.4,
+        "propWeightG": 17.1,
+        "hardwareWeightG": 31.3,
+        "diameter": 24,
+        "length": 70,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      },
+      {
+        "designation": "E12-RCJ",
+        "commonName": "E12",
+        "totalWeightG": 59.4,
+        "propWeightG": 30.3,
+        "hardwareWeightG": 29.1,
+        "diameter": 24,
+        "length": 70,
+        "type": "reload",
+        "propInfo": "Blackjack"
+      },
+      {
+        "designation": "E6-RCT",
+        "commonName": "E6",
+        "totalWeightG": 50,
+        "propWeightG": 21.5,
+        "hardwareWeightG": 28.5,
+        "diameter": 24,
+        "length": 70,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      }
+    ]
+  },
+  "RMS-24/40": {
+    "designation": "RMS-24/40",
+    "type": "RMS",
+    "diameter": 24,
+    "maxLength": 70,
+    "maxTotalImpulse": 40,
+    "avgHardwareWeightG": 38.5,
+    "hardwareWeightStdG": 2.2,
+    "sampleCount": 8,
+    "motors": [
+      "D9W",
+      "D15T",
+      "E11J",
+      "E18W",
+      "E28T",
+      "F12J",
+      "F24W",
+      "F39T"
+    ],
+    "entries": [
+      {
+        "designation": "D9W",
+        "commonName": "D9",
+        "totalWeightG": 47.4,
+        "propWeightG": 10.1,
+        "hardwareWeightG": 37.3,
+        "diameter": 24,
+        "length": 70,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "D15T",
+        "commonName": "D15",
+        "totalWeightG": 46.9,
+        "propWeightG": 8.9,
+        "hardwareWeightG": 38.0,
+        "diameter": 24,
+        "length": 70,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      },
+      {
+        "designation": "E11J",
+        "commonName": "E11",
+        "totalWeightG": 62.4,
+        "propWeightG": 25,
+        "hardwareWeightG": 37.4,
+        "diameter": 24,
+        "length": 70,
+        "type": "reload",
+        "propInfo": "Blackjack"
+      },
+      {
+        "designation": "E18W",
+        "commonName": "E18",
+        "totalWeightG": 59,
+        "propWeightG": 20.7,
+        "hardwareWeightG": 38.3,
+        "diameter": 24,
+        "length": 70,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "E28T",
+        "commonName": "E28",
+        "totalWeightG": 55.3,
+        "propWeightG": 18.4,
+        "hardwareWeightG": 36.9,
+        "diameter": 24,
+        "length": 70,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      },
+      {
+        "designation": "F12J",
+        "commonName": "F12",
+        "totalWeightG": 68.6,
+        "propWeightG": 30.3,
+        "hardwareWeightG": 38.3,
+        "diameter": 24,
+        "length": 70,
+        "type": "reload",
+        "propInfo": "Blackjack"
+      },
+      {
+        "designation": "F24W",
+        "commonName": "F24",
+        "totalWeightG": 62.9,
+        "propWeightG": 19,
+        "hardwareWeightG": 43.9,
+        "diameter": 24,
+        "length": 70,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "F39T",
+        "commonName": "F39",
+        "totalWeightG": 60.6,
+        "propWeightG": 22.7,
+        "hardwareWeightG": 37.9,
+        "diameter": 24,
+        "length": 70,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      }
+    ]
+  },
+  "RMS-24/60": {
+    "designation": "RMS-24/60",
+    "type": "RMS",
+    "diameter": 24,
+    "maxLength": 95,
+    "maxTotalImpulse": 60,
+    "avgHardwareWeightG": 55.0,
+    "hardwareWeightStdG": 0.6,
+    "sampleCount": 4,
+    "motors": [
+      "F62FJ",
+      "F63R",
+      "F51NT",
+      "F35W"
+    ],
+    "entries": [
+      {
+        "designation": "F62FJ",
+        "commonName": "F62",
+        "totalWeightG": 88.1,
+        "propWeightG": 32.2,
+        "hardwareWeightG": 55.9,
+        "diameter": 24,
+        "length": 95,
+        "type": "reload",
+        "propInfo": "Black Max"
+      },
+      {
+        "designation": "F63R",
+        "commonName": "F63",
+        "totalWeightG": 82.2,
+        "propWeightG": 27.6,
+        "hardwareWeightG": 54.6,
+        "diameter": 24,
+        "length": 95,
+        "type": "reload",
+        "propInfo": "Redline"
+      },
+      {
+        "designation": "F51NT",
+        "commonName": "F51",
+        "totalWeightG": 81,
+        "propWeightG": 26.5,
+        "hardwareWeightG": 54.5,
+        "diameter": 24,
+        "length": 95,
+        "type": "reload",
+        "propInfo": "New Blue Thunder"
+      },
+      {
+        "designation": "F35W",
+        "commonName": "F35",
+        "totalWeightG": 85,
+        "propWeightG": 30,
+        "hardwareWeightG": 55,
+        "diameter": 24,
+        "length": 95,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "SU-D22W": {
+    "designation": "SU-D22W",
+    "type": "SU",
+    "diameter": 24,
+    "maxLength": 86.7,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 25.5,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "D22W"
+    ],
+    "entries": [
+      {
+        "designation": "D22W",
+        "commonName": "D22",
+        "totalWeightG": 37.5,
+        "propWeightG": 12,
+        "hardwareWeightG": 25.5,
+        "diameter": 24,
+        "length": 86.7,
+        "type": "SU",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "SU-E26W": {
+    "designation": "SU-E26W",
+    "type": "SU",
+    "diameter": 24,
+    "maxLength": 87.7,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 25.7,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "E26W"
+    ],
+    "entries": [
+      {
+        "designation": "E26W",
+        "commonName": "E26",
+        "totalWeightG": 44,
+        "propWeightG": 18.3,
+        "hardwareWeightG": 25.7,
+        "diameter": 24,
+        "length": 87.7,
+        "type": "SU",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "SU-E30T": {
+    "designation": "SU-E30T",
+    "type": "SU",
+    "diameter": 24,
+    "maxLength": 70,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 29.2,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "E30T"
+    ],
+    "entries": [
+      {
+        "designation": "E30T",
+        "commonName": "E30",
+        "totalWeightG": 47,
+        "propWeightG": 17.8,
+        "hardwareWeightG": 29.2,
+        "diameter": 24,
+        "length": 70,
+        "type": "SU",
+        "propInfo": "Blue Thunder"
+      }
+    ]
+  },
+  "SU-E15W": {
+    "designation": "SU-E15W",
+    "type": "SU",
+    "diameter": 24,
+    "maxLength": 65,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 32.8,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "E15W"
+    ],
+    "entries": [
+      {
+        "designation": "E15W",
+        "commonName": "E15",
+        "totalWeightG": 49,
+        "propWeightG": 16.2,
+        "hardwareWeightG": 32.8,
+        "diameter": 24,
+        "length": 65,
+        "type": "SU",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "SU-E20W": {
+    "designation": "SU-E20W",
+    "type": "SU",
+    "diameter": 24,
+    "maxLength": 70,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 32.8,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "E20W"
+    ],
+    "entries": [
+      {
+        "designation": "E20W",
+        "commonName": "E20",
+        "totalWeightG": 49,
+        "propWeightG": 16.2,
+        "hardwareWeightG": 32.8,
+        "diameter": 24,
+        "length": 70,
+        "type": "SU",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "SU-F44W": {
+    "designation": "SU-F44W",
+    "type": "SU",
+    "diameter": 24,
+    "maxLength": 70,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 28.3,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "F44W"
+    ],
+    "entries": [
+      {
+        "designation": "F44W",
+        "commonName": "F44",
+        "totalWeightG": 48,
+        "propWeightG": 19.7,
+        "hardwareWeightG": 28.3,
+        "diameter": 24,
+        "length": 70,
+        "type": "SU",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "SU-F30FJ": {
+    "designation": "SU-F30FJ",
+    "type": "SU",
+    "diameter": 24,
+    "maxLength": 95,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 39.4,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "F30FJ"
+    ],
+    "entries": [
+      {
+        "designation": "F30FJ",
+        "commonName": "F30",
+        "totalWeightG": 70.6,
+        "propWeightG": 31.2,
+        "hardwareWeightG": 39.4,
+        "diameter": 24,
+        "length": 95,
+        "type": "SU",
+        "propInfo": "Black Max"
+      }
+    ]
+  },
+  "SU-F21W": {
+    "designation": "SU-F21W",
+    "type": "SU",
+    "diameter": 24,
+    "maxLength": 95,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 34,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "F21W"
+    ],
+    "entries": [
+      {
+        "designation": "F21W",
+        "commonName": "F21",
+        "totalWeightG": 64,
+        "propWeightG": 30,
+        "hardwareWeightG": 34,
+        "diameter": 24,
+        "length": 95,
+        "type": "SU",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "SU-F32T": {
+    "designation": "SU-F32T",
+    "type": "SU",
+    "diameter": 24,
+    "maxLength": 95,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 33,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "F32T"
+    ],
+    "entries": [
+      {
+        "designation": "F32T",
+        "commonName": "F32",
+        "totalWeightG": 64,
+        "propWeightG": 31,
+        "hardwareWeightG": 33,
+        "diameter": 24,
+        "length": 95,
+        "type": "SU",
+        "propInfo": "Blue Thunder"
+      }
+    ]
+  },
+  "SU-G42": {
+    "designation": "SU-G42",
+    "type": "SU",
+    "diameter": 24,
+    "maxLength": 144,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 46.2,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "G42"
+    ],
+    "entries": [
+      {
+        "designation": "G42",
+        "commonName": "G42",
+        "totalWeightG": 95,
+        "propWeightG": 48.800000000000004,
+        "hardwareWeightG": 46.2,
+        "diameter": 24,
+        "length": 144,
+        "type": "SU",
+        "propInfo": ""
+      }
+    ]
+  },
+  "RMS-29/40-120": {
+    "designation": "RMS-29/40-120",
+    "type": "RMS",
+    "diameter": 29,
+    "maxLength": 124,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 86.0,
+    "hardwareWeightStdG": 3.5,
+    "sampleCount": 10,
+    "motors": [
+      "E23T",
+      "E16W",
+      "F22J",
+      "F52T",
+      "F40W",
+      "G53FJ",
+      "G71R",
+      "G76G",
+      "G64W",
+      "HP-G138T"
+    ],
+    "entries": [
+      {
+        "designation": "E23T",
+        "commonName": "E23",
+        "totalWeightG": 104,
+        "propWeightG": 17.4,
+        "hardwareWeightG": 86.6,
+        "diameter": 29,
+        "length": 124,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      },
+      {
+        "designation": "E16W",
+        "commonName": "E16",
+        "totalWeightG": 109,
+        "propWeightG": 19,
+        "hardwareWeightG": 90,
+        "diameter": 29,
+        "length": 124,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "F22J",
+        "commonName": "F22",
+        "totalWeightG": 135.6,
+        "propWeightG": 46.3,
+        "hardwareWeightG": 89.3,
+        "diameter": 29,
+        "length": 124,
+        "type": "reload",
+        "propInfo": "Blackjack"
+      },
+      {
+        "designation": "F52T",
+        "commonName": "F52",
+        "totalWeightG": 121.6,
+        "propWeightG": 36.6,
+        "hardwareWeightG": 85.0,
+        "diameter": 29,
+        "length": 124,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      },
+      {
+        "designation": "F40W",
+        "commonName": "F40",
+        "totalWeightG": 126.2,
+        "propWeightG": 40,
+        "hardwareWeightG": 86.2,
+        "diameter": 29,
+        "length": 124,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "G53FJ",
+        "commonName": "G53",
+        "totalWeightG": 146,
+        "propWeightG": 60,
+        "hardwareWeightG": 86,
+        "diameter": 29,
+        "length": 124,
+        "type": "reload",
+        "propInfo": "Black Max"
+      },
+      {
+        "designation": "G71R",
+        "commonName": "G71",
+        "totalWeightG": 147,
+        "propWeightG": 64,
+        "hardwareWeightG": 83,
+        "diameter": 29,
+        "length": 124,
+        "type": "reload",
+        "propInfo": "Redline"
+      },
+      {
+        "designation": "G76G",
+        "commonName": "G76",
+        "totalWeightG": 147,
+        "propWeightG": 60,
+        "hardwareWeightG": 87,
+        "diameter": 29,
+        "length": 124,
+        "type": "reload",
+        "propInfo": "Mojave Green"
+      },
+      {
+        "designation": "G64W",
+        "commonName": "G64",
+        "totalWeightG": 151,
+        "propWeightG": 62.5,
+        "hardwareWeightG": 88.5,
+        "diameter": 29,
+        "length": 124,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "HP-G138T",
+        "commonName": "G138",
+        "totalWeightG": 148,
+        "propWeightG": 70,
+        "hardwareWeightG": 78,
+        "diameter": 29,
+        "length": 124,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      }
+    ]
+  },
+  "RMS-29/60": {
+    "designation": "RMS-29/60",
+    "type": "RMS",
+    "diameter": 29,
+    "maxLength": 99,
+    "maxTotalImpulse": 60,
+    "avgHardwareWeightG": 79.8,
+    "hardwareWeightStdG": 1.8,
+    "sampleCount": 2,
+    "motors": [
+      "F37W",
+      "F62T"
+    ],
+    "entries": [
+      {
+        "designation": "F37W",
+        "commonName": "F37",
+        "totalWeightG": 109.3,
+        "propWeightG": 28.2,
+        "hardwareWeightG": 81.1,
+        "diameter": 29,
+        "length": 99,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "F62T",
+        "commonName": "F62",
+        "totalWeightG": 109,
+        "propWeightG": 30.5,
+        "hardwareWeightG": 78.5,
+        "diameter": 29,
+        "length": 89,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      }
+    ]
+  },
+  "RMS-29/100": {
+    "designation": "RMS-29/100",
+    "type": "RMS",
+    "diameter": 29,
+    "maxLength": 125,
+    "maxTotalImpulse": 100,
+    "avgHardwareWeightG": 91.3,
+    "hardwareWeightStdG": 1.1,
+    "sampleCount": 2,
+    "motors": [
+      "G54W",
+      "G104T"
+    ],
+    "entries": [
+      {
+        "designation": "G54W",
+        "commonName": "G54",
+        "totalWeightG": 136.5,
+        "propWeightG": 46,
+        "hardwareWeightG": 90.5,
+        "diameter": 29,
+        "length": 124,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "G104T",
+        "commonName": "G104",
+        "totalWeightG": 136,
+        "propWeightG": 43.9,
+        "hardwareWeightG": 92.1,
+        "diameter": 29,
+        "length": 125,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      }
+    ]
+  },
+  "RMS-29/120": {
+    "designation": "RMS-29/120",
+    "type": "RMS",
+    "diameter": 29,
+    "maxLength": 150,
+    "maxTotalImpulse": 120,
+    "avgHardwareWeightG": 86.8,
+    "hardwareWeightStdG": 25.3,
+    "sampleCount": 3,
+    "motors": [
+      "G77R",
+      "G79W",
+      "G25W"
+    ],
+    "entries": [
+      {
+        "designation": "G77R",
+        "commonName": "G77",
+        "totalWeightG": 165,
+        "propWeightG": 58,
+        "hardwareWeightG": 107,
+        "diameter": 29,
+        "length": 150,
+        "type": "reload",
+        "propInfo": "Redline"
+      },
+      {
+        "designation": "G79W",
+        "commonName": "G79",
+        "totalWeightG": 157,
+        "propWeightG": 62,
+        "hardwareWeightG": 95,
+        "diameter": 29,
+        "length": 150,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "G25W",
+        "commonName": "G25",
+        "totalWeightG": 121,
+        "propWeightG": 62.5,
+        "hardwareWeightG": 58.5,
+        "diameter": 29,
+        "length": 124,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "RMS-29/180": {
+    "designation": "RMS-29/180",
+    "type": "RMS",
+    "diameter": 29,
+    "maxLength": 194,
+    "maxTotalImpulse": 180,
+    "avgHardwareWeightG": 116.2,
+    "hardwareWeightStdG": 8.3,
+    "sampleCount": 4,
+    "motors": [
+      "G75J",
+      "H165R",
+      "H238T",
+      "H128W"
+    ],
+    "entries": [
+      {
+        "designation": "G75J",
+        "commonName": "G75",
+        "totalWeightG": 232.96,
+        "propWeightG": 104.3,
+        "hardwareWeightG": 128.66,
+        "diameter": 29,
+        "length": 194,
+        "type": "reload",
+        "propInfo": "Blackjack"
+      },
+      {
+        "designation": "H165R",
+        "commonName": "H165",
+        "totalWeightG": 201.6,
+        "propWeightG": 90,
+        "hardwareWeightG": 111.6,
+        "diameter": 29,
+        "length": 194,
+        "type": "reload",
+        "propInfo": "Redline"
+      },
+      {
+        "designation": "H238T",
+        "commonName": "H238",
+        "totalWeightG": 196,
+        "propWeightG": 83.4,
+        "hardwareWeightG": 112.6,
+        "diameter": 29,
+        "length": 194,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      },
+      {
+        "designation": "H128W",
+        "commonName": "H128",
+        "totalWeightG": 206,
+        "propWeightG": 94.2,
+        "hardwareWeightG": 111.8,
+        "diameter": 29,
+        "length": 194,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "RMS-29/240": {
+    "designation": "RMS-29/240",
+    "type": "RMS",
+    "diameter": 29,
+    "maxLength": 238,
+    "maxTotalImpulse": 240,
+    "avgHardwareWeightG": 138.4,
+    "hardwareWeightStdG": 6.0,
+    "sampleCount": 5,
+    "motors": [
+      "H97J",
+      "H210R",
+      "H180W",
+      "H220T",
+      "H250G"
+    ],
+    "entries": [
+      {
+        "designation": "H97J",
+        "commonName": "H97",
+        "totalWeightG": 277.76,
+        "propWeightG": 137.1,
+        "hardwareWeightG": 140.66,
+        "diameter": 29,
+        "length": 238,
+        "type": "reload",
+        "propInfo": "Blackjack"
+      },
+      {
+        "designation": "H210R",
+        "commonName": "H210",
+        "totalWeightG": 246.4,
+        "propWeightG": 106.39999999999999,
+        "hardwareWeightG": 140.0,
+        "diameter": 29,
+        "length": 238,
+        "type": "reload",
+        "propInfo": "Redline"
+      },
+      {
+        "designation": "H180W",
+        "commonName": "H180",
+        "totalWeightG": 252,
+        "propWeightG": 123.9,
+        "hardwareWeightG": 128.1,
+        "diameter": 29,
+        "length": 238,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "H220T",
+        "commonName": "H220",
+        "totalWeightG": 250,
+        "propWeightG": 106.39999999999999,
+        "hardwareWeightG": 143.6,
+        "diameter": 29,
+        "length": 238,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      },
+      {
+        "designation": "H250G",
+        "commonName": "H250",
+        "totalWeightG": 256,
+        "propWeightG": 116.3,
+        "hardwareWeightG": 139.7,
+        "diameter": 29,
+        "length": 238,
+        "type": "reload",
+        "propInfo": "Mojave Green"
+      }
+    ]
+  },
+  "RMS-29/360": {
+    "designation": "RMS-29/360",
+    "type": "RMS",
+    "diameter": 29,
+    "maxLength": 333,
+    "maxTotalImpulse": 360,
+    "avgHardwareWeightG": 181.3,
+    "hardwareWeightStdG": 15.7,
+    "sampleCount": 2,
+    "motors": [
+      "H268R",
+      "I200W"
+    ],
+    "entries": [
+      {
+        "designation": "H268R",
+        "commonName": "H268",
+        "totalWeightG": 358.4,
+        "propWeightG": 166,
+        "hardwareWeightG": 192.4,
+        "diameter": 29,
+        "length": 333,
+        "type": "reload",
+        "propInfo": "Redline"
+      },
+      {
+        "designation": "I200W",
+        "commonName": "I200",
+        "totalWeightG": 357.504,
+        "propWeightG": 187.3,
+        "hardwareWeightG": 170.2,
+        "diameter": 29,
+        "length": 333,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "RMS-38/120": {
+    "designation": "RMS-38/120",
+    "type": "RMS",
+    "diameter": 38,
+    "maxLength": 106,
+    "maxTotalImpulse": 120,
+    "avgHardwareWeightG": 135.9,
+    "hardwareWeightStdG": 4.7,
+    "sampleCount": 4,
+    "motors": [
+      "G339N",
+      "G67R",
+      "G61W",
+      "G69N"
+    ],
+    "entries": [
+      {
+        "designation": "G339N",
+        "commonName": "G339",
+        "totalWeightG": 181,
+        "propWeightG": 49,
+        "hardwareWeightG": 132,
+        "diameter": 38,
+        "length": 97,
+        "type": "reload",
+        "propInfo": "Warp 9"
+      },
+      {
+        "designation": "G67R",
+        "commonName": "G67",
+        "totalWeightG": 201,
+        "propWeightG": 60,
+        "hardwareWeightG": 141,
+        "diameter": 38,
+        "length": 106,
+        "type": "reload",
+        "propInfo": "Redline"
+      },
+      {
+        "designation": "G61W",
+        "commonName": "G61",
+        "totalWeightG": 194,
+        "propWeightG": 62.3,
+        "hardwareWeightG": 131.7,
+        "diameter": 38,
+        "length": 106,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "G69N",
+        "commonName": "G69",
+        "totalWeightG": 201,
+        "propWeightG": 62.199999999999996,
+        "hardwareWeightG": 138.8,
+        "diameter": 38,
+        "length": 106,
+        "type": "reload",
+        "propInfo": "Warp 9"
+      }
+    ]
+  },
+  "RMS-38/240": {
+    "designation": "RMS-38/240",
+    "type": "RMS",
+    "diameter": 38,
+    "maxLength": 152,
+    "maxTotalImpulse": 240,
+    "avgHardwareWeightG": 153.4,
+    "hardwareWeightStdG": 23.2,
+    "sampleCount": 6,
+    "motors": [
+      "H73J",
+      "H148R",
+      "H130W",
+      "H669N",
+      "H123W",
+      "H242T"
+    ],
+    "entries": [
+      {
+        "designation": "H73J",
+        "commonName": "H73",
+        "totalWeightG": 309.12,
+        "propWeightG": 142.7,
+        "hardwareWeightG": 166.42,
+        "diameter": 38,
+        "length": 152,
+        "type": "reload",
+        "propInfo": "Blackjack"
+      },
+      {
+        "designation": "H148R",
+        "commonName": "H148",
+        "totalWeightG": 309.12,
+        "propWeightG": 122,
+        "hardwareWeightG": 187.12,
+        "diameter": 38,
+        "length": 152,
+        "type": "reload",
+        "propInfo": "Redline"
+      },
+      {
+        "designation": "H130W",
+        "commonName": "H130",
+        "totalWeightG": 237,
+        "propWeightG": 120,
+        "hardwareWeightG": 117,
+        "diameter": 38,
+        "length": 152,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "H669N",
+        "commonName": "H669",
+        "totalWeightG": 252,
+        "propWeightG": 98,
+        "hardwareWeightG": 154,
+        "diameter": 38,
+        "length": 152,
+        "type": "reload",
+        "propInfo": "Warp 9"
+      },
+      {
+        "designation": "H123W",
+        "commonName": "H123",
+        "totalWeightG": 275,
+        "propWeightG": 128.7,
+        "hardwareWeightG": 146.3,
+        "diameter": 38,
+        "length": 152,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "H242T",
+        "commonName": "H242",
+        "totalWeightG": 264,
+        "propWeightG": 114.7,
+        "hardwareWeightG": 149.3,
+        "diameter": 38,
+        "length": 152,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      }
+    ]
+  },
+  "RMS-38/360": {
+    "designation": "RMS-38/360",
+    "type": "RMS",
+    "diameter": 38,
+    "maxLength": 213,
+    "maxTotalImpulse": 360,
+    "avgHardwareWeightG": 178.8,
+    "hardwareWeightStdG": 18.9,
+    "sampleCount": 11,
+    "motors": [
+      "H112J",
+      "H178DM",
+      "H170M",
+      "H999N",
+      "H550ST",
+      "I180W",
+      "I161W",
+      "I218R",
+      "I357T",
+      "I245G",
+      "I49N"
+    ],
+    "entries": [
+      {
+        "designation": "H112J",
+        "commonName": "H112",
+        "totalWeightG": 379.456,
+        "propWeightG": 191.2,
+        "hardwareWeightG": 188.26,
+        "diameter": 38,
+        "length": 191,
+        "type": "reload",
+        "propInfo": "Blackjack"
+      },
+      {
+        "designation": "H178DM",
+        "commonName": "H178",
+        "totalWeightG": 324,
+        "propWeightG": 177,
+        "hardwareWeightG": 147,
+        "diameter": 38,
+        "length": 191,
+        "type": "reload",
+        "propInfo": "Dark Matter"
+      },
+      {
+        "designation": "H170M",
+        "commonName": "H170",
+        "totalWeightG": 330,
+        "propWeightG": 182.5,
+        "hardwareWeightG": 147.5,
+        "diameter": 38,
+        "length": 191,
+        "type": "reload",
+        "propInfo": "Metalstorm"
+      },
+      {
+        "designation": "H999N",
+        "commonName": "H999",
+        "totalWeightG": 331,
+        "propWeightG": 147,
+        "hardwareWeightG": 184,
+        "diameter": 38,
+        "length": 203,
+        "type": "reload",
+        "propInfo": "Warp 9"
+      },
+      {
+        "designation": "H550ST",
+        "commonName": "H550",
+        "totalWeightG": 323,
+        "propWeightG": 145,
+        "hardwareWeightG": 178,
+        "diameter": 38,
+        "length": 213,
+        "type": "reload",
+        "propInfo": "Super Thunder"
+      },
+      {
+        "designation": "I180W",
+        "commonName": "I180",
+        "totalWeightG": 385,
+        "propWeightG": 180,
+        "hardwareWeightG": 205,
+        "diameter": 38,
+        "length": 191,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "I161W",
+        "commonName": "I161",
+        "totalWeightG": 366,
+        "propWeightG": 193.2,
+        "hardwareWeightG": 172.8,
+        "diameter": 38,
+        "length": 191,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "I218R",
+        "commonName": "I218",
+        "totalWeightG": 371.8,
+        "propWeightG": 172.7,
+        "hardwareWeightG": 199.1,
+        "diameter": 38,
+        "length": 203,
+        "type": "reload",
+        "propInfo": "Redline"
+      },
+      {
+        "designation": "I357T",
+        "commonName": "I357",
+        "totalWeightG": 343,
+        "propWeightG": 174.4,
+        "hardwareWeightG": 168.6,
+        "diameter": 38,
+        "length": 203,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      },
+      {
+        "designation": "I245G",
+        "commonName": "I245",
+        "totalWeightG": 365,
+        "propWeightG": 181.3,
+        "hardwareWeightG": 183.7,
+        "diameter": 38,
+        "length": 202,
+        "type": "reload",
+        "propInfo": "Mojave Green"
+      },
+      {
+        "designation": "I49N",
+        "commonName": "I49",
+        "totalWeightG": 398,
+        "propWeightG": 205,
+        "hardwareWeightG": 193,
+        "diameter": 38,
+        "length": 184,
+        "type": "reload",
+        "propInfo": "Warp 9"
+      }
+    ]
+  },
+  "RMS-38/480": {
+    "designation": "RMS-38/480",
+    "type": "RMS",
+    "diameter": 38,
+    "maxLength": 250,
+    "maxTotalImpulse": 480,
+    "avgHardwareWeightG": 227.4,
+    "hardwareWeightStdG": 19.1,
+    "sampleCount": 7,
+    "motors": [
+      "I225FJ",
+      "I154J",
+      "I285R",
+      "I1299N",
+      "I300T",
+      "I211W",
+      "I59WN"
+    ],
+    "entries": [
+      {
+        "designation": "I225FJ",
+        "commonName": "I225",
+        "totalWeightG": 486,
+        "propWeightG": 264,
+        "hardwareWeightG": 222,
+        "diameter": 38,
+        "length": 240,
+        "type": "reload",
+        "propInfo": "Black Max"
+      },
+      {
+        "designation": "I154J",
+        "commonName": "I154",
+        "totalWeightG": 491.904,
+        "propWeightG": 252.8,
+        "hardwareWeightG": 239.1,
+        "diameter": 38,
+        "length": 241,
+        "type": "reload",
+        "propInfo": "Blackjack"
+      },
+      {
+        "designation": "I285R",
+        "commonName": "I285",
+        "totalWeightG": 492.8,
+        "propWeightG": 230.2,
+        "hardwareWeightG": 262.6,
+        "diameter": 38,
+        "length": 250,
+        "type": "reload",
+        "propInfo": "Redline"
+      },
+      {
+        "designation": "I1299N",
+        "commonName": "I1299",
+        "totalWeightG": 422,
+        "propWeightG": 192,
+        "hardwareWeightG": 230,
+        "diameter": 38,
+        "length": 249,
+        "type": "reload",
+        "propInfo": "Warp 9"
+      },
+      {
+        "designation": "I300T",
+        "commonName": "I300",
+        "totalWeightG": 441,
+        "propWeightG": 221.6,
+        "hardwareWeightG": 219.4,
+        "diameter": 38,
+        "length": 250,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      },
+      {
+        "designation": "I211W",
+        "commonName": "I211",
+        "totalWeightG": 455,
+        "propWeightG": 251.3,
+        "hardwareWeightG": 203.7,
+        "diameter": 38,
+        "length": 248,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "I59WN",
+        "commonName": "I59",
+        "totalWeightG": 487,
+        "propWeightG": 272,
+        "hardwareWeightG": 215,
+        "diameter": 38,
+        "length": 232,
+        "type": "reload",
+        "propInfo": "White Lightning/Warp 9"
+      }
+    ]
+  },
+  "RMS-38/600": {
+    "designation": "RMS-38/600",
+    "type": "RMS",
+    "diameter": 38,
+    "maxLength": 299,
+    "maxTotalImpulse": 600,
+    "avgHardwareWeightG": 253.0,
+    "hardwareWeightStdG": 11.6,
+    "sampleCount": 5,
+    "motors": [
+      "I195J",
+      "I305FJ",
+      "I366R",
+      "I435T",
+      "I284W"
+    ],
+    "entries": [
+      {
+        "designation": "I195J",
+        "commonName": "I195",
+        "totalWeightG": 572,
+        "propWeightG": 301,
+        "hardwareWeightG": 271,
+        "diameter": 38,
+        "length": 299,
+        "type": "reload",
+        "propInfo": "Blackjack"
+      },
+      {
+        "designation": "I305FJ",
+        "commonName": "I305",
+        "totalWeightG": 581,
+        "propWeightG": 330,
+        "hardwareWeightG": 251,
+        "diameter": 38,
+        "length": 288,
+        "type": "reload",
+        "propInfo": "Black Max"
+      },
+      {
+        "designation": "I366R",
+        "commonName": "I366",
+        "totalWeightG": 555.5,
+        "propWeightG": 300,
+        "hardwareWeightG": 255.5,
+        "diameter": 38,
+        "length": 299,
+        "type": "reload",
+        "propInfo": "Redline"
+      },
+      {
+        "designation": "I435T",
+        "commonName": "I435",
+        "totalWeightG": 518,
+        "propWeightG": 269.9,
+        "hardwareWeightG": 248.1,
+        "diameter": 38,
+        "length": 299,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      },
+      {
+        "designation": "I284W",
+        "commonName": "I284",
+        "totalWeightG": 555.52,
+        "propWeightG": 315.9,
+        "hardwareWeightG": 239.62,
+        "diameter": 38,
+        "length": 299,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "RMS-38/720": {
+    "designation": "RMS-38/720",
+    "type": "RMS",
+    "diameter": 38,
+    "maxLength": 345.4,
+    "maxTotalImpulse": 720,
+    "avgHardwareWeightG": 276.0,
+    "hardwareWeightStdG": 29.9,
+    "sampleCount": 7,
+    "motors": [
+      "I327DM",
+      "I364FJ",
+      "I600R",
+      "J340M",
+      "J420R",
+      "J350W",
+      "J500G"
+    ],
+    "entries": [
+      {
+        "designation": "I327DM",
+        "commonName": "I327",
+        "totalWeightG": 628,
+        "propWeightG": 354,
+        "hardwareWeightG": 274,
+        "diameter": 38,
+        "length": 337,
+        "type": "reload",
+        "propInfo": "Dark Matter"
+      },
+      {
+        "designation": "I364FJ",
+        "commonName": "I364",
+        "totalWeightG": 678,
+        "propWeightG": 396,
+        "hardwareWeightG": 282,
+        "diameter": 38,
+        "length": 335,
+        "type": "reload",
+        "propInfo": "Black Max"
+      },
+      {
+        "designation": "I600R",
+        "commonName": "I600",
+        "totalWeightG": 602,
+        "propWeightG": 324,
+        "hardwareWeightG": 278,
+        "diameter": 38,
+        "length": 345.4,
+        "type": "reload",
+        "propInfo": "Redline"
+      },
+      {
+        "designation": "J340M",
+        "commonName": "J340",
+        "totalWeightG": 577.3,
+        "propWeightG": 365,
+        "hardwareWeightG": 212.3,
+        "diameter": 38,
+        "length": 337,
+        "type": "reload",
+        "propInfo": "Metalstorm"
+      },
+      {
+        "designation": "J420R",
+        "commonName": "J420",
+        "totalWeightG": 649.6,
+        "propWeightG": 345,
+        "hardwareWeightG": 304.6,
+        "diameter": 38,
+        "length": 337,
+        "type": "reload",
+        "propInfo": "Redline"
+      },
+      {
+        "designation": "J350W",
+        "commonName": "J350",
+        "totalWeightG": 665,
+        "propWeightG": 375.1,
+        "hardwareWeightG": 289.9,
+        "diameter": 38,
+        "length": 337,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "J500G",
+        "commonName": "J500",
+        "totalWeightG": 654,
+        "propWeightG": 362.6,
+        "hardwareWeightG": 291.4,
+        "diameter": 38,
+        "length": 345,
+        "type": "reload",
+        "propInfo": "Mojave Green"
+      }
+    ]
+  },
+  "RMS-38/1080": {
+    "designation": "RMS-38/1080",
+    "type": "RMS",
+    "diameter": 38,
+    "maxLength": 502,
+    "maxTotalImpulse": 1080,
+    "avgHardwareWeightG": 363.9,
+    "hardwareWeightStdG": 17.8,
+    "sampleCount": 4,
+    "motors": [
+      "J520W",
+      "J575FJ",
+      "J570W",
+      "J825R"
+    ],
+    "entries": [
+      {
+        "designation": "J520W",
+        "commonName": "J520",
+        "totalWeightG": 757.4,
+        "propWeightG": 381,
+        "hardwareWeightG": 376.4,
+        "diameter": 38,
+        "length": 502,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "J575FJ",
+        "commonName": "J575",
+        "totalWeightG": 914,
+        "propWeightG": 576,
+        "hardwareWeightG": 338,
+        "diameter": 38,
+        "length": 478,
+        "type": "reload",
+        "propInfo": "Black Max"
+      },
+      {
+        "designation": "J570W",
+        "commonName": "J570",
+        "totalWeightG": 902,
+        "propWeightG": 535.8,
+        "hardwareWeightG": 366.2,
+        "diameter": 38,
+        "length": 479,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "J825R",
+        "commonName": "J825",
+        "totalWeightG": 875,
+        "propWeightG": 500,
+        "hardwareWeightG": 375,
+        "diameter": 38,
+        "length": 478,
+        "type": "reload",
+        "propInfo": "Redline"
+      }
+    ]
+  },
+  "RMS-38/1320": {
+    "designation": "RMS-38/1320",
+    "type": "RMS",
+    "diameter": 38,
+    "maxLength": 584.2,
+    "maxTotalImpulse": 1320,
+    "avgHardwareWeightG": 418,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "J510W"
+    ],
+    "entries": [
+      {
+        "designation": "J510W",
+        "commonName": "J510",
+        "totalWeightG": 1080,
+        "propWeightG": 662,
+        "hardwareWeightG": 418,
+        "diameter": 38,
+        "length": 584.2,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "SU-H283ST-15A": {
+    "designation": "SU-H283ST-15A",
+    "type": "SU",
+    "diameter": 38,
+    "maxLength": 155,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 150,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "H283ST-15A"
+    ],
+    "entries": [
+      {
+        "designation": "H283ST-15A",
+        "commonName": "H283",
+        "totalWeightG": 247,
+        "propWeightG": 97,
+        "hardwareWeightG": 150,
+        "diameter": 38,
+        "length": 155,
+        "type": "SU",
+        "propInfo": "Super Thunder"
+      }
+    ]
+  },
+  "SU-H100W_DMS": {
+    "designation": "SU-H100W_DMS",
+    "type": "SU",
+    "diameter": 38,
+    "maxLength": 153.10000000000002,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 140,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "H100W_DMS"
+    ],
+    "entries": [
+      {
+        "designation": "H100W_DMS",
+        "commonName": "H100",
+        "totalWeightG": 261,
+        "propWeightG": 121,
+        "hardwareWeightG": 140,
+        "diameter": 38,
+        "length": 153.10000000000002,
+        "type": "SU",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "SU-H219T": {
+    "designation": "SU-H219T",
+    "type": "SU",
+    "diameter": 38,
+    "maxLength": 155,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 152,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "H219T"
+    ],
+    "entries": [
+      {
+        "designation": "H219T",
+        "commonName": "H219",
+        "totalWeightG": 261,
+        "propWeightG": 109,
+        "hardwareWeightG": 152,
+        "diameter": 38,
+        "length": 155,
+        "type": "SU",
+        "propInfo": "Blue Thunder"
+      }
+    ]
+  },
+  "SU-H45W": {
+    "designation": "SU-H45W",
+    "type": "SU",
+    "diameter": 38,
+    "maxLength": 194,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 97.4,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "H45W"
+    ],
+    "entries": [
+      {
+        "designation": "H45W",
+        "commonName": "H45",
+        "totalWeightG": 294.784,
+        "propWeightG": 197.4,
+        "hardwareWeightG": 97.38,
+        "diameter": 38,
+        "length": 194,
+        "type": "SU",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "SU-HP-H550ST": {
+    "designation": "SU-HP-H550ST",
+    "type": "SU",
+    "diameter": 38,
+    "maxLength": 206,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 140,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "HP-H550ST"
+    ],
+    "entries": [
+      {
+        "designation": "HP-H550ST",
+        "commonName": "H550",
+        "totalWeightG": 316,
+        "propWeightG": 176,
+        "hardwareWeightG": 140,
+        "diameter": 38,
+        "length": 206,
+        "type": "SU",
+        "propInfo": "Super Thunder"
+      }
+    ]
+  },
+  "SU-HP-H45W": {
+    "designation": "SU-HP-H45W",
+    "type": "SU",
+    "diameter": 38,
+    "maxLength": 203,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 185,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "HP-H45W"
+    ],
+    "entries": [
+      {
+        "designation": "HP-H45W",
+        "commonName": "H45",
+        "totalWeightG": 365,
+        "propWeightG": 180,
+        "hardwareWeightG": 185,
+        "diameter": 38,
+        "length": 203,
+        "type": "SU",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "SU-I175WS": {
+    "designation": "SU-I175WS",
+    "type": "SU",
+    "diameter": 38,
+    "maxLength": 214,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 180,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "I175WS"
+    ],
+    "entries": [
+      {
+        "designation": "I175WS",
+        "commonName": "I175",
+        "totalWeightG": 348,
+        "propWeightG": 168,
+        "hardwareWeightG": 180,
+        "diameter": 38,
+        "length": 214,
+        "type": "SU",
+        "propInfo": "Super White Lightning"
+      }
+    ]
+  },
+  "SU-HP-I140W": {
+    "designation": "SU-HP-I140W",
+    "type": "SU",
+    "diameter": 38,
+    "maxLength": 202.7,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 173,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "HP-I140W"
+    ],
+    "entries": [
+      {
+        "designation": "HP-I140W",
+        "commonName": "I140",
+        "totalWeightG": 356,
+        "propWeightG": 183,
+        "hardwareWeightG": 173,
+        "diameter": 38,
+        "length": 202.7,
+        "type": "SU",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "SU-I40N-P": {
+    "designation": "SU-I40N-P",
+    "type": "SU",
+    "diameter": 38,
+    "maxLength": 203,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 162.9,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "I40N-P"
+    ],
+    "entries": [
+      {
+        "designation": "I40N-P",
+        "commonName": "I40",
+        "totalWeightG": 359.9,
+        "propWeightG": 197,
+        "hardwareWeightG": 162.9,
+        "diameter": 38,
+        "length": 203,
+        "type": "SU",
+        "propInfo": "Warp 9"
+      }
+    ]
+  },
+  "SU-HP-I280DM": {
+    "designation": "SU-HP-I280DM",
+    "type": "SU",
+    "diameter": 38,
+    "maxLength": 356.4,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 261,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "HP-I280DM"
+    ],
+    "entries": [
+      {
+        "designation": "HP-I280DM",
+        "commonName": "I280",
+        "totalWeightG": 616,
+        "propWeightG": 355,
+        "hardwareWeightG": 261,
+        "diameter": 38,
+        "length": 356.4,
+        "type": "SU",
+        "propInfo": "Dark Matter"
+      }
+    ]
+  },
+  "SU-I132W": {
+    "designation": "SU-I132W",
+    "type": "SU",
+    "diameter": 38,
+    "maxLength": 335,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 135.7,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "I132W"
+    ],
+    "entries": [
+      {
+        "designation": "I132W",
+        "commonName": "I132",
+        "totalWeightG": 512.064,
+        "propWeightG": 376.4,
+        "hardwareWeightG": 135.66,
+        "diameter": 38,
+        "length": 335,
+        "type": "SU",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "SU-HP-I500T": {
+    "designation": "SU-HP-I500T",
+    "type": "SU",
+    "diameter": 38,
+    "maxLength": 356,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 264,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "HP-I500T"
+    ],
+    "entries": [
+      {
+        "designation": "HP-I500T",
+        "commonName": "I500",
+        "totalWeightG": 576,
+        "propWeightG": 312,
+        "hardwareWeightG": 264,
+        "diameter": 38,
+        "length": 356,
+        "type": "SU",
+        "propInfo": "Blue Thunder"
+      }
+    ]
+  },
+  "SU-I350R": {
+    "designation": "SU-I350R",
+    "type": "SU",
+    "diameter": 38,
+    "maxLength": 355.6,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 268,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "I350R"
+    ],
+    "entries": [
+      {
+        "designation": "I350R",
+        "commonName": "I350",
+        "totalWeightG": 616,
+        "propWeightG": 348,
+        "hardwareWeightG": 268,
+        "diameter": 38,
+        "length": 355.6,
+        "type": "SU",
+        "propInfo": "Redline"
+      }
+    ]
+  },
+  "SU-HP-J425R": {
+    "designation": "SU-HP-J425R",
+    "type": "SU",
+    "diameter": 38,
+    "maxLength": 356,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 267,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "HP-J425R"
+    ],
+    "entries": [
+      {
+        "designation": "HP-J425R",
+        "commonName": "J425",
+        "totalWeightG": 631,
+        "propWeightG": 364,
+        "hardwareWeightG": 267,
+        "diameter": 38,
+        "length": 356,
+        "type": "SU",
+        "propInfo": "Redline"
+      }
+    ]
+  },
+  "SU-HP-J270W": {
+    "designation": "SU-HP-J270W",
+    "type": "SU",
+    "diameter": 38,
+    "maxLength": 356.4,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 261,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "HP-J270W"
+    ],
+    "entries": [
+      {
+        "designation": "HP-J270W",
+        "commonName": "J270",
+        "totalWeightG": 642,
+        "propWeightG": 381,
+        "hardwareWeightG": 261,
+        "diameter": 38,
+        "length": 356.4,
+        "type": "SU",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "SU-J435WS": {
+    "designation": "SU-J435WS",
+    "type": "SU",
+    "diameter": 38,
+    "maxLength": 365.9,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 264.4,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "J435WS"
+    ],
+    "entries": [
+      {
+        "designation": "J435WS",
+        "commonName": "J435",
+        "totalWeightG": 616.4,
+        "propWeightG": 352,
+        "hardwareWeightG": 264.4,
+        "diameter": 38,
+        "length": 365.9,
+        "type": "SU",
+        "propInfo": "Super White Lightning"
+      }
+    ]
+  },
+  "RMS-54/426": {
+    "designation": "RMS-54/426",
+    "type": "RMS",
+    "diameter": 54,
+    "maxLength": 156,
+    "maxTotalImpulse": 426,
+    "avgHardwareWeightG": 317.3,
+    "hardwareWeightStdG": 8.7,
+    "sampleCount": 6,
+    "motors": [
+      "I117FJ",
+      "I215R",
+      "I599N",
+      "I229T",
+      "I115W",
+      "I170G"
+    ],
+    "entries": [
+      {
+        "designation": "I117FJ",
+        "commonName": "I117",
+        "totalWeightG": 566,
+        "propWeightG": 243,
+        "hardwareWeightG": 323,
+        "diameter": 54,
+        "length": 156,
+        "type": "reload",
+        "propInfo": "Black Max"
+      },
+      {
+        "designation": "I215R",
+        "commonName": "I215",
+        "totalWeightG": 527,
+        "propWeightG": 208,
+        "hardwareWeightG": 319,
+        "diameter": 54,
+        "length": 156,
+        "type": "reload",
+        "propInfo": "Redline"
+      },
+      {
+        "designation": "I599N",
+        "commonName": "I599",
+        "totalWeightG": 512,
+        "propWeightG": 195,
+        "hardwareWeightG": 317,
+        "diameter": 54,
+        "length": 156,
+        "type": "reload",
+        "propInfo": "Warp 9"
+      },
+      {
+        "designation": "I229T",
+        "commonName": "I229",
+        "totalWeightG": 514,
+        "propWeightG": 196,
+        "hardwareWeightG": 318,
+        "diameter": 54,
+        "length": 156,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      },
+      {
+        "designation": "I115W",
+        "commonName": "I115",
+        "totalWeightG": 545,
+        "propWeightG": 219,
+        "hardwareWeightG": 326,
+        "diameter": 54,
+        "length": 156,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "I170G",
+        "commonName": "I170",
+        "totalWeightG": 528,
+        "propWeightG": 227,
+        "hardwareWeightG": 301,
+        "diameter": 54,
+        "length": 147.1,
+        "type": "reload",
+        "propInfo": "Mojave Green"
+      }
+    ]
+  },
+  "RMS-54/852": {
+    "designation": "RMS-54/852",
+    "type": "RMS",
+    "diameter": 54,
+    "maxLength": 243,
+    "maxTotalImpulse": 852,
+    "avgHardwareWeightG": 409.1,
+    "hardwareWeightStdG": 38.5,
+    "sampleCount": 10,
+    "motors": [
+      "J90W",
+      "J250FJ",
+      "J550ST-14",
+      "J615ST-20A",
+      "J315R",
+      "J180T",
+      "J275W",
+      "J460T",
+      "J1299N",
+      "J99N"
+    ],
+    "entries": [
+      {
+        "designation": "J90W",
+        "commonName": "J90",
+        "totalWeightG": 852.544,
+        "propWeightG": 426,
+        "hardwareWeightG": 426.54,
+        "diameter": 54,
+        "length": 243,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "J250FJ",
+        "commonName": "J250",
+        "totalWeightG": 907,
+        "propWeightG": 487,
+        "hardwareWeightG": 420,
+        "diameter": 54,
+        "length": 241,
+        "type": "reload",
+        "propInfo": "Black Max"
+      },
+      {
+        "designation": "J550ST-14",
+        "commonName": "J550",
+        "totalWeightG": 828,
+        "propWeightG": 371,
+        "hardwareWeightG": 457,
+        "diameter": 54,
+        "length": 231,
+        "type": "reload",
+        "propInfo": "Super Thunder"
+      },
+      {
+        "designation": "J615ST-20A",
+        "commonName": "J615",
+        "totalWeightG": 801.6999999999999,
+        "propWeightG": 370.5,
+        "hardwareWeightG": 431.2,
+        "diameter": 54,
+        "length": 240.4,
+        "type": "reload",
+        "propInfo": "Super Thunder"
+      },
+      {
+        "designation": "J315R",
+        "commonName": "J315",
+        "totalWeightG": 851.2,
+        "propWeightG": 438,
+        "hardwareWeightG": 413.2,
+        "diameter": 54,
+        "length": 230,
+        "type": "reload",
+        "propInfo": "Redline"
+      },
+      {
+        "designation": "J180T",
+        "commonName": "J180",
+        "totalWeightG": 809.088,
+        "propWeightG": 437.1,
+        "hardwareWeightG": 371.99,
+        "diameter": 54,
+        "length": 230,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      },
+      {
+        "designation": "J275W",
+        "commonName": "J275",
+        "totalWeightG": 864.192,
+        "propWeightG": 472,
+        "hardwareWeightG": 392.19,
+        "diameter": 54,
+        "length": 230,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "J460T",
+        "commonName": "J460",
+        "totalWeightG": 789,
+        "propWeightG": 415.4,
+        "hardwareWeightG": 373.6,
+        "diameter": 54,
+        "length": 230,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      },
+      {
+        "designation": "J1299N",
+        "commonName": "J1299",
+        "totalWeightG": 834,
+        "propWeightG": 371.6,
+        "hardwareWeightG": 462.4,
+        "diameter": 54,
+        "length": 231,
+        "type": "reload",
+        "propInfo": "Warp 9"
+      },
+      {
+        "designation": "J99N",
+        "commonName": "J99",
+        "totalWeightG": 899,
+        "propWeightG": 556,
+        "hardwareWeightG": 343,
+        "diameter": 54,
+        "length": 231,
+        "type": "reload",
+        "propInfo": "Warp 9"
+      }
+    ]
+  },
+  "RMS-54/1280": {
+    "designation": "RMS-54/1280",
+    "type": "RMS",
+    "diameter": 54,
+    "maxLength": 368,
+    "maxTotalImpulse": 1280,
+    "avgHardwareWeightG": 462.8,
+    "hardwareWeightStdG": 50.3,
+    "sampleCount": 6,
+    "motors": [
+      "J135W",
+      "J401FJ",
+      "J540R",
+      "J1799N",
+      "J800T",
+      "J415W"
+    ],
+    "entries": [
+      {
+        "designation": "J135W",
+        "commonName": "J135",
+        "totalWeightG": 1141.06,
+        "propWeightG": 633,
+        "hardwareWeightG": 508.06,
+        "diameter": 54,
+        "length": 368,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "J401FJ",
+        "commonName": "J401",
+        "totalWeightG": 912,
+        "propWeightG": 511,
+        "hardwareWeightG": 401,
+        "diameter": 54,
+        "length": 325,
+        "type": "reload",
+        "propInfo": "Black Max"
+      },
+      {
+        "designation": "J540R",
+        "commonName": "J540",
+        "totalWeightG": 1084.16,
+        "propWeightG": 679,
+        "hardwareWeightG": 405.16,
+        "diameter": 54,
+        "length": 314,
+        "type": "reload",
+        "propInfo": "Redline"
+      },
+      {
+        "designation": "J1799N",
+        "commonName": "J1799",
+        "totalWeightG": 1111,
+        "propWeightG": 591,
+        "hardwareWeightG": 520,
+        "diameter": 54,
+        "length": 330,
+        "type": "reload",
+        "propInfo": "Warp 9"
+      },
+      {
+        "designation": "J800T",
+        "commonName": "J800",
+        "totalWeightG": 1085.95,
+        "propWeightG": 618,
+        "hardwareWeightG": 467.95,
+        "diameter": 54,
+        "length": 316,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      },
+      {
+        "designation": "J415W",
+        "commonName": "J415",
+        "totalWeightG": 1168,
+        "propWeightG": 693.3,
+        "hardwareWeightG": 474.7,
+        "diameter": 54,
+        "length": 314,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "RMS-54/1706": {
+    "designation": "RMS-54/1706",
+    "type": "RMS",
+    "diameter": 54,
+    "maxLength": 437,
+    "maxTotalImpulse": 1706,
+    "avgHardwareWeightG": 595.1,
+    "hardwareWeightStdG": 77.5,
+    "sampleCount": 10,
+    "motors": [
+      "K456DM",
+      "K2050ST",
+      "K185W",
+      "K1100T",
+      "K513FJ",
+      "K695R",
+      "K550W",
+      "K540M",
+      "K805G",
+      "K1103X"
+    ],
+    "entries": [
+      {
+        "designation": "K456DM",
+        "commonName": "K456",
+        "totalWeightG": 1484,
+        "propWeightG": 866,
+        "hardwareWeightG": 618,
+        "diameter": 54,
+        "length": 401,
+        "type": "reload",
+        "propInfo": "Dark Matter"
+      },
+      {
+        "designation": "K2050ST",
+        "commonName": "K2050",
+        "totalWeightG": 1292,
+        "propWeightG": 674,
+        "hardwareWeightG": 618,
+        "diameter": 54,
+        "length": 383,
+        "type": "reload",
+        "propInfo": "Super Thunder"
+      },
+      {
+        "designation": "K185W",
+        "commonName": "K185",
+        "totalWeightG": 1434.05,
+        "propWeightG": 836.8,
+        "hardwareWeightG": 597.25,
+        "diameter": 54,
+        "length": 437,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "K1100T",
+        "commonName": "K1100",
+        "totalWeightG": 1336,
+        "propWeightG": 773.3,
+        "hardwareWeightG": 562.7,
+        "diameter": 54,
+        "length": 398,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      },
+      {
+        "designation": "K513FJ",
+        "commonName": "K513",
+        "totalWeightG": 1647,
+        "propWeightG": 974,
+        "hardwareWeightG": 673,
+        "diameter": 54,
+        "length": 410,
+        "type": "reload",
+        "propInfo": "Black Max"
+      },
+      {
+        "designation": "K695R",
+        "commonName": "K695",
+        "totalWeightG": 1487.36,
+        "propWeightG": 903,
+        "hardwareWeightG": 584.36,
+        "diameter": 54,
+        "length": 410,
+        "type": "reload",
+        "propInfo": "Redline"
+      },
+      {
+        "designation": "K550W",
+        "commonName": "K550",
+        "totalWeightG": 1487.36,
+        "propWeightG": 889.1,
+        "hardwareWeightG": 598.26,
+        "diameter": 54,
+        "length": 410,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "K540M",
+        "commonName": "K540",
+        "totalWeightG": 1275,
+        "propWeightG": 876.7,
+        "hardwareWeightG": 398.3,
+        "diameter": 54,
+        "length": 401,
+        "type": "reload",
+        "propInfo": "Metalstorm"
+      },
+      {
+        "designation": "K805G",
+        "commonName": "K805",
+        "totalWeightG": 1543,
+        "propWeightG": 871.1,
+        "hardwareWeightG": 671.9,
+        "diameter": 54,
+        "length": 401,
+        "type": "reload",
+        "propInfo": "Mojave Green"
+      },
+      {
+        "designation": "K1103X",
+        "commonName": "K1103",
+        "totalWeightG": 1459,
+        "propWeightG": 830,
+        "hardwareWeightG": 629,
+        "diameter": 54,
+        "length": 401,
+        "type": "reload",
+        "propInfo": "Propellant X"
+      }
+    ]
+  },
+  "RMS-54/2800": {
+    "designation": "RMS-54/2800",
+    "type": "RMS",
+    "diameter": 54,
+    "maxLength": 627,
+    "maxTotalImpulse": 2800,
+    "avgHardwareWeightG": 951.7,
+    "hardwareWeightStdG": 74.4,
+    "sampleCount": 3,
+    "motors": [
+      "K990DM",
+      "K1050W",
+      "L1090W"
+    ],
+    "entries": [
+      {
+        "designation": "K990DM",
+        "commonName": "K990",
+        "totalWeightG": 2109,
+        "propWeightG": 1224,
+        "hardwareWeightG": 885,
+        "diameter": 54,
+        "length": 598,
+        "type": "reload",
+        "propInfo": "Dark Matter"
+      },
+      {
+        "designation": "K1050W",
+        "commonName": "K1050",
+        "totalWeightG": 2203,
+        "propWeightG": 1265,
+        "hardwareWeightG": 938,
+        "diameter": 54,
+        "length": 627,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "L1090W",
+        "commonName": "L1090",
+        "totalWeightG": 2432,
+        "propWeightG": 1400,
+        "hardwareWeightG": 1032,
+        "diameter": 54,
+        "length": 625.8000000000001,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "RMS-54/2560": {
+    "designation": "RMS-54/2560",
+    "type": "RMS",
+    "diameter": 54,
+    "maxLength": 579,
+    "maxTotalImpulse": 2560,
+    "avgHardwareWeightG": 805.3,
+    "hardwareWeightStdG": 65.0,
+    "sampleCount": 6,
+    "motors": [
+      "K270W",
+      "K828FJ",
+      "K1275R",
+      "K375NW",
+      "K700W",
+      "K480W"
+    ],
+    "entries": [
+      {
+        "designation": "K270W",
+        "commonName": "K270",
+        "totalWeightG": 2100,
+        "propWeightG": 1188,
+        "hardwareWeightG": 912,
+        "diameter": 54,
+        "length": 579,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "K828FJ",
+        "commonName": "K828",
+        "totalWeightG": 2223,
+        "propWeightG": 1373,
+        "hardwareWeightG": 850,
+        "diameter": 54,
+        "length": 579,
+        "type": "reload",
+        "propInfo": "Black Max"
+      },
+      {
+        "designation": "K1275R",
+        "commonName": "K1275",
+        "totalWeightG": 1986,
+        "propWeightG": 1222,
+        "hardwareWeightG": 764,
+        "diameter": 54,
+        "length": 568,
+        "type": "reload",
+        "propInfo": "Redline"
+      },
+      {
+        "designation": "K375NW",
+        "commonName": "K375",
+        "totalWeightG": 2106,
+        "propWeightG": 1318,
+        "hardwareWeightG": 788,
+        "diameter": 54,
+        "length": 579,
+        "type": "reload",
+        "propInfo": "White Lightning/Warp 9"
+      },
+      {
+        "designation": "K700W",
+        "commonName": "K700",
+        "totalWeightG": 2035.26,
+        "propWeightG": 1303.3,
+        "hardwareWeightG": 731.96,
+        "diameter": 54,
+        "length": 568,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "K480W",
+        "commonName": "K480",
+        "totalWeightG": 2078,
+        "propWeightG": 1292,
+        "hardwareWeightG": 786,
+        "diameter": 54,
+        "length": 579,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "SU-I65W": {
+    "designation": "SU-I65W",
+    "type": "SU",
+    "diameter": 54,
+    "maxLength": 235,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 391.9,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "I65W"
+    ],
+    "entries": [
+      {
+        "designation": "I65W",
+        "commonName": "I65",
+        "totalWeightG": 761.6,
+        "propWeightG": 369.7,
+        "hardwareWeightG": 391.9,
+        "diameter": 54,
+        "length": 235,
+        "type": "SU",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "SU-HP-I65W": {
+    "designation": "SU-HP-I65W",
+    "type": "SU",
+    "diameter": 54,
+    "maxLength": 218,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 375,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "HP-I65W"
+    ],
+    "entries": [
+      {
+        "designation": "HP-I65W",
+        "commonName": "I65",
+        "totalWeightG": 752,
+        "propWeightG": 377,
+        "hardwareWeightG": 375,
+        "diameter": 54,
+        "length": 218,
+        "type": "SU",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "SU-J250W": {
+    "designation": "SU-J250W",
+    "type": "SU",
+    "diameter": 54,
+    "maxLength": 218.20000000000002,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 345,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "J250W"
+    ],
+    "entries": [
+      {
+        "designation": "J250W",
+        "commonName": "J250",
+        "totalWeightG": 708,
+        "propWeightG": 363,
+        "hardwareWeightG": 345,
+        "diameter": 54,
+        "length": 218.20000000000002,
+        "type": "SU",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "SU-J450DM": {
+    "designation": "SU-J450DM",
+    "type": "SU",
+    "diameter": 54,
+    "maxLength": 359,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 713,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "J450DM"
+    ],
+    "entries": [
+      {
+        "designation": "J450DM",
+        "commonName": "J450",
+        "totalWeightG": 1223,
+        "propWeightG": 510,
+        "hardwareWeightG": 713,
+        "diameter": 54,
+        "length": 359,
+        "type": "SU",
+        "propInfo": "Dark Matter"
+      }
+    ]
+  },
+  "SU-J1265T": {
+    "designation": "SU-J1265T",
+    "type": "SU",
+    "diameter": 54,
+    "maxLength": 397,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 588,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "J1265T"
+    ],
+    "entries": [
+      {
+        "designation": "J1265T",
+        "commonName": "J1265",
+        "totalWeightG": 1095,
+        "propWeightG": 507,
+        "hardwareWeightG": 588,
+        "diameter": 54,
+        "length": 397,
+        "type": "SU",
+        "propInfo": "Super Thunder"
+      }
+    ]
+  },
+  "SU-J125W": {
+    "designation": "SU-J125W",
+    "type": "SU",
+    "diameter": 54,
+    "maxLength": 368,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 649.3,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "J125W"
+    ],
+    "entries": [
+      {
+        "designation": "J125W",
+        "commonName": "J125",
+        "totalWeightG": 1288,
+        "propWeightG": 638.7,
+        "hardwareWeightG": 649.3,
+        "diameter": 54,
+        "length": 368,
+        "type": "SU",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "SU-K400C": {
+    "designation": "SU-K400C",
+    "type": "SU",
+    "diameter": 54,
+    "maxLength": 359,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 701,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "K400C"
+    ],
+    "entries": [
+      {
+        "designation": "K400C",
+        "commonName": "K400",
+        "totalWeightG": 1194,
+        "propWeightG": 493,
+        "hardwareWeightG": 701,
+        "diameter": 54,
+        "length": 359,
+        "type": "SU",
+        "propInfo": "Classic"
+      }
+    ]
+  },
+  "SU-K76WN-P": {
+    "designation": "SU-K76WN-P",
+    "type": "SU",
+    "diameter": 54,
+    "maxLength": 368,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 437.9,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "K76WN-P"
+    ],
+    "entries": [
+      {
+        "designation": "K76WN-P",
+        "commonName": "K76",
+        "totalWeightG": 1277.9,
+        "propWeightG": 840,
+        "hardwareWeightG": 437.9,
+        "diameter": 54,
+        "length": 368,
+        "type": "SU",
+        "propInfo": "White Lightning/Warp 9"
+      }
+    ]
+  },
+  "SU-HP-K535W": {
+    "designation": "SU-HP-K535W",
+    "type": "SU",
+    "diameter": 54,
+    "maxLength": 358,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 519,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "HP-K535W"
+    ],
+    "entries": [
+      {
+        "designation": "HP-K535W",
+        "commonName": "K535",
+        "totalWeightG": 1264,
+        "propWeightG": 745,
+        "hardwareWeightG": 519,
+        "diameter": 54,
+        "length": 358,
+        "type": "SU",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "SU-K62N": {
+    "designation": "SU-K62N",
+    "type": "SU",
+    "diameter": 54,
+    "maxLength": 274,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 446,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "K62N"
+    ],
+    "entries": [
+      {
+        "designation": "K62N",
+        "commonName": "K62",
+        "totalWeightG": 1277,
+        "propWeightG": 831,
+        "hardwareWeightG": 446,
+        "diameter": 54,
+        "length": 274,
+        "type": "SU",
+        "propInfo": "Warp 9"
+      }
+    ]
+  },
+  "SU-K850DM": {
+    "designation": "SU-K850DM",
+    "type": "SU",
+    "diameter": 54,
+    "maxLength": 635,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 817,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "K850DM"
+    ],
+    "entries": [
+      {
+        "designation": "K850DM",
+        "commonName": "K850",
+        "totalWeightG": 2041,
+        "propWeightG": 1224,
+        "hardwareWeightG": 817,
+        "diameter": 54,
+        "length": 635,
+        "type": "SU",
+        "propInfo": "Dark Matter"
+      }
+    ]
+  },
+  "SU-K455NW-17": {
+    "designation": "SU-K455NW-17",
+    "type": "SU",
+    "diameter": 54,
+    "maxLength": 674.9000000000001,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 829.8,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "K455NW-17"
+    ],
+    "entries": [
+      {
+        "designation": "K455NW-17",
+        "commonName": "K455",
+        "totalWeightG": 2285.8,
+        "propWeightG": 1456,
+        "hardwareWeightG": 829.8,
+        "diameter": 54,
+        "length": 674.9000000000001,
+        "type": "SU",
+        "propInfo": "White Lightning/Warp 9"
+      }
+    ]
+  },
+  "SU-K250W": {
+    "designation": "SU-K250W",
+    "type": "SU",
+    "diameter": 54,
+    "maxLength": 673,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 777.3,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "K250W"
+    ],
+    "entries": [
+      {
+        "designation": "K250W",
+        "commonName": "K250",
+        "totalWeightG": 2211.33,
+        "propWeightG": 1434,
+        "hardwareWeightG": 777.33,
+        "diameter": 54,
+        "length": 673,
+        "type": "SU",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "SU-K1050W-SU": {
+    "designation": "SU-K1050W-SU",
+    "type": "SU",
+    "diameter": 54,
+    "maxLength": 676,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 766.2,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "K1050W-SU"
+    ],
+    "entries": [
+      {
+        "designation": "K1050W-SU",
+        "commonName": "K1050",
+        "totalWeightG": 2128.45,
+        "propWeightG": 1362.2,
+        "hardwareWeightG": 766.25,
+        "diameter": 54,
+        "length": 676,
+        "type": "SU",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "SU-HP-L1000W": {
+    "designation": "SU-HP-L1000W",
+    "type": "SU",
+    "diameter": 54,
+    "maxLength": 635,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 794,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "HP-L1000W"
+    ],
+    "entries": [
+      {
+        "designation": "HP-L1000W",
+        "commonName": "L1000",
+        "totalWeightG": 2194,
+        "propWeightG": 1400,
+        "hardwareWeightG": 794,
+        "diameter": 54,
+        "length": 635,
+        "type": "SU",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "RMS-75/1280": {
+    "designation": "RMS-75/1280",
+    "type": "RMS",
+    "diameter": 75,
+    "maxLength": 267,
+    "maxTotalImpulse": 1280,
+    "avgHardwareWeightG": 1244.8,
+    "hardwareWeightStdG": 152.4,
+    "sampleCount": 2,
+    "motors": [
+      "K750ST",
+      "K1499N"
+    ],
+    "entries": [
+      {
+        "designation": "K750ST",
+        "commonName": "K750",
+        "totalWeightG": 1947.5,
+        "propWeightG": 595,
+        "hardwareWeightG": 1352.5,
+        "diameter": 75,
+        "length": 267,
+        "type": "reload",
+        "propInfo": "Super Thunder"
+      },
+      {
+        "designation": "K1499N",
+        "commonName": "K1499",
+        "totalWeightG": 1741,
+        "propWeightG": 604,
+        "hardwareWeightG": 1137,
+        "diameter": 75,
+        "length": 260,
+        "type": "reload",
+        "propInfo": "Warp 9"
+      }
+    ]
+  },
+  "RMS-75/2560": {
+    "designation": "RMS-75/2560",
+    "type": "RMS",
+    "diameter": 75,
+    "maxLength": 402,
+    "maxTotalImpulse": 2560,
+    "avgHardwareWeightG": 1503.0,
+    "hardwareWeightStdG": 185.2,
+    "sampleCount": 4,
+    "motors": [
+      "K780R",
+      "K560W",
+      "K1800ST-P",
+      "K1000T"
+    ],
+    "entries": [
+      {
+        "designation": "K780R",
+        "commonName": "K780",
+        "totalWeightG": 2934.4,
+        "propWeightG": 1268,
+        "hardwareWeightG": 1666.4,
+        "diameter": 75,
+        "length": 395,
+        "type": "reload",
+        "propInfo": "Redline"
+      },
+      {
+        "designation": "K560W",
+        "commonName": "K560",
+        "totalWeightG": 2744,
+        "propWeightG": 1424.9,
+        "hardwareWeightG": 1319.1,
+        "diameter": 75,
+        "length": 396,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "K1800ST-P",
+        "commonName": "K1800",
+        "totalWeightG": 2771.5,
+        "propWeightG": 1113,
+        "hardwareWeightG": 1658.5,
+        "diameter": 75,
+        "length": 402,
+        "type": "reload",
+        "propInfo": "Super Thunder"
+      },
+      {
+        "designation": "K1000T",
+        "commonName": "K1000",
+        "totalWeightG": 2602,
+        "propWeightG": 1234,
+        "hardwareWeightG": 1368,
+        "diameter": 75,
+        "length": 382.9,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      }
+    ]
+  },
+  "RMS-75/3840": {
+    "designation": "RMS-75/3840",
+    "type": "RMS",
+    "diameter": 75,
+    "maxLength": 560.8,
+    "maxTotalImpulse": 3840,
+    "avgHardwareWeightG": 1857.9,
+    "hardwareWeightStdG": 149.0,
+    "sampleCount": 7,
+    "motors": [
+      "L2775ST-PS",
+      "L1150R",
+      "L850W",
+      "L1520T",
+      "L1256WS",
+      "L1390G",
+      "L1940X"
+    ],
+    "entries": [
+      {
+        "designation": "L2775ST-PS",
+        "commonName": "L2775",
+        "totalWeightG": 3479.1,
+        "propWeightG": 1418,
+        "hardwareWeightG": 2061.1,
+        "diameter": 75,
+        "length": 558.2,
+        "type": "reload",
+        "propInfo": "Super Thunder"
+      },
+      {
+        "designation": "L1150R",
+        "commonName": "L1150",
+        "totalWeightG": 3673.6,
+        "propWeightG": 1902,
+        "hardwareWeightG": 1771.6,
+        "diameter": 75,
+        "length": 530,
+        "type": "reload",
+        "propInfo": "Redline"
+      },
+      {
+        "designation": "L850W",
+        "commonName": "L850",
+        "totalWeightG": 3742,
+        "propWeightG": 2094.8,
+        "hardwareWeightG": 1647.2,
+        "diameter": 75,
+        "length": 531,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "L1520T",
+        "commonName": "L1520",
+        "totalWeightG": 3651.4,
+        "propWeightG": 1854,
+        "hardwareWeightG": 1797.4,
+        "diameter": 75,
+        "length": 517.9,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      },
+      {
+        "designation": "L1256WS",
+        "commonName": "L1256",
+        "totalWeightG": 3755.7,
+        "propWeightG": 1964,
+        "hardwareWeightG": 1791.7,
+        "diameter": 75,
+        "length": 560.8,
+        "type": "reload",
+        "propInfo": "Super White Lightning"
+      },
+      {
+        "designation": "L1390G",
+        "commonName": "L1390",
+        "totalWeightG": 3879,
+        "propWeightG": 1973,
+        "hardwareWeightG": 1906,
+        "diameter": 75,
+        "length": 530,
+        "type": "reload",
+        "propInfo": "Mojave Green"
+      },
+      {
+        "designation": "L1940X",
+        "commonName": "L1940",
+        "totalWeightG": 3855.5,
+        "propWeightG": 1825,
+        "hardwareWeightG": 2030.5,
+        "diameter": 75,
+        "length": 560,
+        "type": "reload",
+        "propInfo": "Propellant X"
+      }
+    ]
+  },
+  "RMS-75/5120": {
+    "designation": "RMS-75/5120",
+    "type": "RMS",
+    "diameter": 75,
+    "maxLength": 699.7,
+    "maxTotalImpulse": 5120,
+    "avgHardwareWeightG": 2169.0,
+    "hardwareWeightStdG": 150.4,
+    "sampleCount": 13,
+    "motors": [
+      "L1040DM",
+      "L900DM",
+      "L1170FJ",
+      "L1420R",
+      "L1365M",
+      "L1120W",
+      "L2200G",
+      "M2225WS",
+      "M1500G",
+      "M1297W",
+      "M2030G-P",
+      "M2050X-P",
+      "M1780NT"
+    ],
+    "entries": [
+      {
+        "designation": "L1040DM",
+        "commonName": "L1040",
+        "totalWeightG": 4717,
+        "propWeightG": 2602,
+        "hardwareWeightG": 2115,
+        "diameter": 75,
+        "length": 681,
+        "type": "reload",
+        "propInfo": "Dark Matter"
+      },
+      {
+        "designation": "L900DM",
+        "commonName": "L900",
+        "totalWeightG": 4724,
+        "propWeightG": 2472,
+        "hardwareWeightG": 2252,
+        "diameter": 75,
+        "length": 665,
+        "type": "reload",
+        "propInfo": "Dark Matter"
+      },
+      {
+        "designation": "L1170FJ",
+        "commonName": "L1170",
+        "totalWeightG": 4990,
+        "propWeightG": 2800,
+        "hardwareWeightG": 2190,
+        "diameter": 75,
+        "length": 665,
+        "type": "reload",
+        "propInfo": "Black Max"
+      },
+      {
+        "designation": "L1420R",
+        "commonName": "L1420",
+        "totalWeightG": 4562,
+        "propWeightG": 2560,
+        "hardwareWeightG": 2002,
+        "diameter": 75,
+        "length": 665,
+        "type": "reload",
+        "propInfo": "Redline"
+      },
+      {
+        "designation": "L1365M",
+        "commonName": "L1365",
+        "totalWeightG": 4908,
+        "propWeightG": 2648,
+        "hardwareWeightG": 2260,
+        "diameter": 75,
+        "length": 665,
+        "type": "reload",
+        "propInfo": "Metalstorm"
+      },
+      {
+        "designation": "L1120W",
+        "commonName": "L1120",
+        "totalWeightG": 4657.86,
+        "propWeightG": 2777.8,
+        "hardwareWeightG": 1880.06,
+        "diameter": 75,
+        "length": 665,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "L2200G",
+        "commonName": "L2200",
+        "totalWeightG": 4783,
+        "propWeightG": 2518,
+        "hardwareWeightG": 2265,
+        "diameter": 75,
+        "length": 681,
+        "type": "reload",
+        "propInfo": "Mojave Green"
+      },
+      {
+        "designation": "M2225WS",
+        "commonName": "M2225",
+        "totalWeightG": 4695,
+        "propWeightG": 2331,
+        "hardwareWeightG": 2364,
+        "diameter": 75,
+        "length": 692,
+        "type": "reload",
+        "propInfo": "Super White Lightning"
+      },
+      {
+        "designation": "M1500G",
+        "commonName": "M1500",
+        "totalWeightG": 4896,
+        "propWeightG": 2631,
+        "hardwareWeightG": 2265,
+        "diameter": 75,
+        "length": 681,
+        "type": "reload",
+        "propInfo": "Mojave Green"
+      },
+      {
+        "designation": "M1297W",
+        "commonName": "M1297",
+        "totalWeightG": 4637,
+        "propWeightG": 2722,
+        "hardwareWeightG": 1915,
+        "diameter": 75,
+        "length": 665,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "M2030G-P",
+        "commonName": "M2030",
+        "totalWeightG": 4906,
+        "propWeightG": 2663,
+        "hardwareWeightG": 2243,
+        "diameter": 75,
+        "length": 653,
+        "type": "reload",
+        "propInfo": "Mojave Green"
+      },
+      {
+        "designation": "M2050X-P",
+        "commonName": "M2050",
+        "totalWeightG": 4558.6,
+        "propWeightG": 2268,
+        "hardwareWeightG": 2290.6,
+        "diameter": 75,
+        "length": 699.7,
+        "type": "reload",
+        "propInfo": "Propellant X"
+      },
+      {
+        "designation": "M1780NT",
+        "commonName": "M1780",
+        "totalWeightG": 4715,
+        "propWeightG": 2560,
+        "hardwareWeightG": 2155,
+        "diameter": 75,
+        "length": 665,
+        "type": "reload",
+        "propInfo": "New Blue Thunder"
+      }
+    ]
+  },
+  "RMS-75/6400": {
+    "designation": "RMS-75/6400",
+    "type": "RMS",
+    "diameter": 75,
+    "maxLength": 801,
+    "maxTotalImpulse": 6400,
+    "avgHardwareWeightG": 2369.1,
+    "hardwareWeightStdG": 554.9,
+    "sampleCount": 4,
+    "motors": [
+      "L1250DM",
+      "M1550R",
+      "M650W",
+      "M1315W"
+    ],
+    "entries": [
+      {
+        "designation": "L1250DM",
+        "commonName": "L1250",
+        "totalWeightG": 5647,
+        "propWeightG": 2565,
+        "hardwareWeightG": 3082,
+        "diameter": 75,
+        "length": 801,
+        "type": "reload",
+        "propInfo": "Dark Matter"
+      },
+      {
+        "designation": "M1550R",
+        "commonName": "M1550",
+        "totalWeightG": 5644.8,
+        "propWeightG": 3170,
+        "hardwareWeightG": 2474.8,
+        "diameter": 75,
+        "length": 801,
+        "type": "reload",
+        "propInfo": "Redline"
+      },
+      {
+        "designation": "M650W",
+        "commonName": "M650",
+        "totalWeightG": 5125,
+        "propWeightG": 3351,
+        "hardwareWeightG": 1774,
+        "diameter": 75,
+        "length": 801,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "M1315W",
+        "commonName": "M1315",
+        "totalWeightG": 5644.8,
+        "propWeightG": 3499.4,
+        "hardwareWeightG": 2145.4,
+        "diameter": 75,
+        "length": 801,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "RMS-75/7680": {
+    "designation": "RMS-75/7680",
+    "type": "RMS",
+    "diameter": 75,
+    "maxLength": 935.9,
+    "maxTotalImpulse": 7680,
+    "avgHardwareWeightG": 2299,
+    "hardwareWeightStdG": 550.1,
+    "sampleCount": 2,
+    "motors": [
+      "M685W",
+      "M1850W"
+    ],
+    "entries": [
+      {
+        "designation": "M685W",
+        "commonName": "M685",
+        "totalWeightG": 7008,
+        "propWeightG": 4320,
+        "hardwareWeightG": 2688,
+        "diameter": 75,
+        "length": 935.9,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "M1850W",
+        "commonName": "M1850",
+        "totalWeightG": 6032,
+        "propWeightG": 4122,
+        "hardwareWeightG": 1910,
+        "diameter": 75,
+        "length": 923,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "RMS-75/10240": {
+    "designation": "RMS-75/10240",
+    "type": "RMS",
+    "diameter": 75,
+    "maxLength": 1232.5,
+    "maxTotalImpulse": 10240,
+    "avgHardwareWeightG": 3783.2,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "N2700W-PS"
+    ],
+    "entries": [
+      {
+        "designation": "N2700W-PS",
+        "commonName": "N2700",
+        "totalWeightG": 9058.199999999999,
+        "propWeightG": 5275,
+        "hardwareWeightG": 3783.2,
+        "diameter": 75,
+        "length": 1232.5,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "SU-L875DM": {
+    "designation": "SU-L875DM",
+    "type": "SU",
+    "diameter": 75,
+    "maxLength": 638,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 2105,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "L875DM"
+    ],
+    "entries": [
+      {
+        "designation": "L875DM",
+        "commonName": "L875",
+        "totalWeightG": 4577,
+        "propWeightG": 2472,
+        "hardwareWeightG": 2105,
+        "diameter": 75,
+        "length": 638,
+        "type": "SU",
+        "propInfo": "Dark Matter"
+      }
+    ]
+  },
+  "SU-M1350W": {
+    "designation": "SU-M1350W",
+    "type": "SU",
+    "diameter": 75,
+    "maxLength": 622,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 2118,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "M1350W"
+    ],
+    "entries": [
+      {
+        "designation": "M1350W",
+        "commonName": "M1350",
+        "totalWeightG": 4808,
+        "propWeightG": 2690,
+        "hardwareWeightG": 2118,
+        "diameter": 75,
+        "length": 622,
+        "type": "SU",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "SU-N3120X-PS": {
+    "designation": "SU-N3120X-PS",
+    "type": "SU",
+    "diameter": 75,
+    "maxLength": 1156,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 3654,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "N3120X-PS"
+    ],
+    "entries": [
+      {
+        "designation": "N3120X-PS",
+        "commonName": "N3120",
+        "totalWeightG": 8200,
+        "propWeightG": 4546,
+        "hardwareWeightG": 3654,
+        "diameter": 75,
+        "length": 1156,
+        "type": "SU",
+        "propInfo": "Propellant X"
+      }
+    ]
+  },
+  "RMS-98/2560": {
+    "designation": "RMS-98/2560",
+    "type": "RMS",
+    "diameter": 98,
+    "maxLength": 302,
+    "maxTotalImpulse": 2560,
+    "avgHardwareWeightG": 1658.2,
+    "hardwareWeightStdG": 142.3,
+    "sampleCount": 5,
+    "motors": [
+      "K680R",
+      "K650T",
+      "K458W",
+      "K1999N",
+      "L339N"
+    ],
+    "entries": [
+      {
+        "designation": "K680R",
+        "commonName": "K680",
+        "totalWeightG": 3035,
+        "propWeightG": 1316,
+        "hardwareWeightG": 1719,
+        "diameter": 98,
+        "length": 289,
+        "type": "reload",
+        "propInfo": "Redline"
+      },
+      {
+        "designation": "K650T",
+        "commonName": "K650",
+        "totalWeightG": 2935.3,
+        "propWeightG": 1280,
+        "hardwareWeightG": 1655.3,
+        "diameter": 98,
+        "length": 289,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      },
+      {
+        "designation": "K458W",
+        "commonName": "K458",
+        "totalWeightG": 3163.78,
+        "propWeightG": 1425,
+        "hardwareWeightG": 1738.78,
+        "diameter": 98,
+        "length": 275,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "K1999N",
+        "commonName": "K1999",
+        "totalWeightG": 2989,
+        "propWeightG": 1225,
+        "hardwareWeightG": 1764,
+        "diameter": 98,
+        "length": 289,
+        "type": "reload",
+        "propInfo": "Warp 9"
+      },
+      {
+        "designation": "L339N",
+        "commonName": "L339",
+        "totalWeightG": 3210,
+        "propWeightG": 1796,
+        "hardwareWeightG": 1414,
+        "diameter": 98,
+        "length": 302,
+        "type": "reload",
+        "propInfo": "Warp 9"
+      }
+    ]
+  },
+  "RMS-98/5120": {
+    "designation": "RMS-98/5120",
+    "type": "RMS",
+    "diameter": 98,
+    "maxLength": 443.9,
+    "maxTotalImpulse": 5120,
+    "avgHardwareWeightG": 2366.6,
+    "hardwareWeightStdG": 206.5,
+    "sampleCount": 5,
+    "motors": [
+      "L1300R",
+      "L400W",
+      "L952W",
+      "L2500ST",
+      "L1500T"
+    ],
+    "entries": [
+      {
+        "designation": "L1300R",
+        "commonName": "L1300",
+        "totalWeightG": 4884,
+        "propWeightG": 2632,
+        "hardwareWeightG": 2252,
+        "diameter": 98,
+        "length": 443,
+        "type": "reload",
+        "propInfo": "Redline"
+      },
+      {
+        "designation": "L400W",
+        "commonName": "L400",
+        "totalWeightG": 5170,
+        "propWeightG": 2696,
+        "hardwareWeightG": 2474,
+        "diameter": 98,
+        "length": 443.9,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "L952W",
+        "commonName": "L952",
+        "totalWeightG": 5012.22,
+        "propWeightG": 2749.7,
+        "hardwareWeightG": 2262.52,
+        "diameter": 98,
+        "length": 427,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "L2500ST",
+        "commonName": "L2500",
+        "totalWeightG": 4989,
+        "propWeightG": 2313,
+        "hardwareWeightG": 2676,
+        "diameter": 98,
+        "length": 443,
+        "type": "reload",
+        "propInfo": "Super Thunder"
+      },
+      {
+        "designation": "L1500T",
+        "commonName": "L1500",
+        "totalWeightG": 4659.2,
+        "propWeightG": 2490.9,
+        "hardwareWeightG": 2168.3,
+        "diameter": 98,
+        "length": 443,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      }
+    ]
+  },
+  "RMS-98/7680": {
+    "designation": "RMS-98/7680",
+    "type": "RMS",
+    "diameter": 98,
+    "maxLength": 598,
+    "maxTotalImpulse": 7680,
+    "avgHardwareWeightG": 2963.6,
+    "hardwareWeightStdG": 146.0,
+    "sampleCount": 8,
+    "motors": [
+      "M1075DM",
+      "M1305M",
+      "M1600R",
+      "M4500ST",
+      "M2400T",
+      "M1419W",
+      "M2100G",
+      "M1845NT"
+    ],
+    "entries": [
+      {
+        "designation": "M1075DM",
+        "commonName": "M1075",
+        "totalWeightG": 6971,
+        "propWeightG": 3846,
+        "hardwareWeightG": 3125,
+        "diameter": 98,
+        "length": 597,
+        "type": "reload",
+        "propInfo": "Dark Matter"
+      },
+      {
+        "designation": "M1305M",
+        "commonName": "M1305",
+        "totalWeightG": 7098,
+        "propWeightG": 4080,
+        "hardwareWeightG": 3018,
+        "diameter": 98,
+        "length": 597,
+        "type": "reload",
+        "propInfo": "Metalstorm"
+      },
+      {
+        "designation": "M1600R",
+        "commonName": "M1600",
+        "totalWeightG": 6917.12,
+        "propWeightG": 4026,
+        "hardwareWeightG": 2891.12,
+        "diameter": 98,
+        "length": 579,
+        "type": "reload",
+        "propInfo": "Redline"
+      },
+      {
+        "designation": "M4500ST",
+        "commonName": "M4500",
+        "totalWeightG": 6622,
+        "propWeightG": 3425,
+        "hardwareWeightG": 3197,
+        "diameter": 98,
+        "length": 597,
+        "type": "reload",
+        "propInfo": "Super Thunder"
+      },
+      {
+        "designation": "M2400T",
+        "commonName": "M2400",
+        "totalWeightG": 6451.2,
+        "propWeightG": 3692.6,
+        "hardwareWeightG": 2758.6,
+        "diameter": 98,
+        "length": 597,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      },
+      {
+        "designation": "M1419W",
+        "commonName": "M1419",
+        "totalWeightG": 6916.22,
+        "propWeightG": 4077,
+        "hardwareWeightG": 2839.22,
+        "diameter": 98,
+        "length": 579,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "M2100G",
+        "commonName": "M2100",
+        "totalWeightG": 6918,
+        "propWeightG": 3948,
+        "hardwareWeightG": 2970,
+        "diameter": 98,
+        "length": 598,
+        "type": "reload",
+        "propInfo": "Mojave Green"
+      },
+      {
+        "designation": "M1845NT",
+        "commonName": "M1845",
+        "totalWeightG": 6682,
+        "propWeightG": 3772,
+        "hardwareWeightG": 2910,
+        "diameter": 98,
+        "length": 597,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      }
+    ]
+  },
+  "RMS-98/10240": {
+    "designation": "RMS-98/10240",
+    "type": "RMS",
+    "diameter": 98,
+    "maxLength": 808,
+    "maxTotalImpulse": 10240,
+    "avgHardwareWeightG": 3533.6,
+    "hardwareWeightStdG": 344.6,
+    "sampleCount": 6,
+    "motors": [
+      "M1800FJ",
+      "M6000ST",
+      "M2000R",
+      "M750W",
+      "M2500T",
+      "M1939W"
+    ],
+    "entries": [
+      {
+        "designation": "M1800FJ",
+        "commonName": "M1800",
+        "totalWeightG": 9162,
+        "propWeightG": 5599,
+        "hardwareWeightG": 3563,
+        "diameter": 98,
+        "length": 751,
+        "type": "reload",
+        "propInfo": "Black Max"
+      },
+      {
+        "designation": "M6000ST",
+        "commonName": "M6000",
+        "totalWeightG": 8029.6,
+        "propWeightG": 3868,
+        "hardwareWeightG": 4161.6,
+        "diameter": 98,
+        "length": 808,
+        "type": "reload",
+        "propInfo": "Super Thunder"
+      },
+      {
+        "designation": "M2000R",
+        "commonName": "M2000",
+        "totalWeightG": 8986.88,
+        "propWeightG": 5368,
+        "hardwareWeightG": 3618.88,
+        "diameter": 98,
+        "length": 732,
+        "type": "reload",
+        "propInfo": "Redline"
+      },
+      {
+        "designation": "M750W",
+        "commonName": "M750",
+        "totalWeightG": 8776,
+        "propWeightG": 5540,
+        "hardwareWeightG": 3236,
+        "diameter": 98,
+        "length": 732,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "M2500T",
+        "commonName": "M2500",
+        "totalWeightG": 8064,
+        "propWeightG": 4711.2,
+        "hardwareWeightG": 3352.8,
+        "diameter": 98,
+        "length": 751,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      },
+      {
+        "designation": "M1939W",
+        "commonName": "M1939",
+        "totalWeightG": 8988.22,
+        "propWeightG": 5719.1,
+        "hardwareWeightG": 3269.12,
+        "diameter": 98,
+        "length": 732,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "RMS-98/15360": {
+    "designation": "RMS-98/15360",
+    "type": "RMS",
+    "diameter": 98,
+    "maxLength": 1046,
+    "maxTotalImpulse": 15360,
+    "avgHardwareWeightG": 4591.1,
+    "hardwareWeightStdG": 151.2,
+    "sampleCount": 4,
+    "motors": [
+      "N2220DM",
+      "N2000W",
+      "N3300R",
+      "N1000W"
+    ],
+    "entries": [
+      {
+        "designation": "N2220DM",
+        "commonName": "N2220",
+        "totalWeightG": 11997,
+        "propWeightG": 7183,
+        "hardwareWeightG": 4814,
+        "diameter": 98,
+        "length": 1046,
+        "type": "reload",
+        "propInfo": "Dark Matter"
+      },
+      {
+        "designation": "N2000W",
+        "commonName": "N2000",
+        "totalWeightG": 12282.8,
+        "propWeightG": 7752.6,
+        "hardwareWeightG": 4530.2,
+        "diameter": 98,
+        "length": 1046,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      },
+      {
+        "designation": "N3300R",
+        "commonName": "N3300",
+        "totalWeightG": 12054,
+        "propWeightG": 7512,
+        "hardwareWeightG": 4542,
+        "diameter": 98,
+        "length": 1046,
+        "type": "reload",
+        "propInfo": "Redline"
+      },
+      {
+        "designation": "N1000W",
+        "commonName": "N1000",
+        "totalWeightG": 12771,
+        "propWeightG": 8293,
+        "hardwareWeightG": 4478,
+        "diameter": 98,
+        "length": 1046,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "RMS-98/20480": {
+    "designation": "RMS-98/20480",
+    "type": "RMS",
+    "diameter": 98,
+    "maxLength": 1433,
+    "maxTotalImpulse": 20480,
+    "avgHardwareWeightG": 6575,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "N4000W-PS"
+    ],
+    "entries": [
+      {
+        "designation": "N4000W-PS",
+        "commonName": "N4000",
+        "totalWeightG": 16375,
+        "propWeightG": 9800,
+        "hardwareWeightG": 6575,
+        "diameter": 98,
+        "length": 1433,
+        "type": "reload",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "RMS-98/18000": {
+    "designation": "RMS-98/18000",
+    "type": "RMS",
+    "diameter": 98,
+    "maxLength": 1201,
+    "maxTotalImpulse": 18000,
+    "avgHardwareWeightG": 5213.2,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "N4800T"
+    ],
+    "entries": [
+      {
+        "designation": "N4800T",
+        "commonName": "N4800",
+        "totalWeightG": 14784,
+        "propWeightG": 9570.8,
+        "hardwareWeightG": 5213.2,
+        "diameter": 98,
+        "length": 1201,
+        "type": "reload",
+        "propInfo": "Blue Thunder"
+      }
+    ]
+  },
+  "SU-M1340W": {
+    "designation": "SU-M1340W",
+    "type": "SU",
+    "diameter": 98,
+    "maxLength": 557,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 2962.0,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "M1340W"
+    ],
+    "entries": [
+      {
+        "designation": "M1340W",
+        "commonName": "M1340",
+        "totalWeightG": 6998,
+        "propWeightG": 4035.9999999999995,
+        "hardwareWeightG": 2962.0,
+        "diameter": 98,
+        "length": 557,
+        "type": "SU",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "SU-N1975W-PS": {
+    "designation": "SU-N1975W-PS",
+    "type": "SU",
+    "diameter": 98,
+    "maxLength": 1110.1000000000001,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 4532.4,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "N1975W-PS"
+    ],
+    "entries": [
+      {
+        "designation": "N1975W-PS",
+        "commonName": "N1975",
+        "totalWeightG": 12208.4,
+        "propWeightG": 7676,
+        "hardwareWeightG": 4532.4,
+        "diameter": 98,
+        "length": 1110.1000000000001,
+        "type": "SU",
+        "propInfo": "White Lightning"
+      }
+    ]
+  },
+  "SU-O5500X-PS": {
+    "designation": "SU-O5500X-PS",
+    "type": "SU",
+    "diameter": 98,
+    "maxLength": 1507,
+    "maxTotalImpulse": 0,
+    "avgHardwareWeightG": 7004,
+    "hardwareWeightStdG": 0.0,
+    "sampleCount": 1,
+    "motors": [
+      "O5500X-PS"
+    ],
+    "entries": [
+      {
+        "designation": "O5500X-PS",
+        "commonName": "O5500",
+        "totalWeightG": 16783,
+        "propWeightG": 9779,
+        "hardwareWeightG": 7004,
+        "diameter": 98,
+        "length": 1507,
+        "type": "SU",
+        "propInfo": "Propellant X"
+      }
+    ]
+  }
+}

@@ -19,6 +19,10 @@ class App(QApplication):
     def __init__(self, args):
         super().__init__(args)
 
+        # Distinguish this fork from upstream openMotor in OS UI surfaces.
+        self.setApplicationName('openmotor-vibes')
+        self.setApplicationDisplayName('OpenMotor Vibes')
+
         self.icon = QIcon(os.path.join(os.path.dirname(sys.argv[0]), 'resources/oMIconCyclesSmall.png'))
 
         self.headless = '-h' in args
@@ -76,7 +80,7 @@ class App(QApplication):
         else:
             usingDarkMode = self.isDarkMode()
             currentTheme = self.style().objectName()
-            logger.log('openMotor version "{}"'.format(appVersionStr))
+            logger.log('OpenMotor Vibes version "{}"'.format(appVersionStr))
             logger.log('Opening window (dark mode: {}, default theme: "{}")'.format(usingDarkMode, currentTheme))
             if startupFileLoaded:
                 logger.log('Loaded startup file from "{}"'.format(args[-1]))
@@ -99,7 +103,7 @@ class App(QApplication):
 
         return self.styleHints().colorScheme() == Qt.ColorScheme.Dark
 
-    def outputMessage(self, content, title='openMotor'):
+    def outputMessage(self, content, title='OpenMotor Vibes'):
         if self.headless:
             print(content)
         else:
@@ -110,7 +114,7 @@ class App(QApplication):
             msg.setWindowTitle(title)
             msg.exec()
 
-    def promptYesNo(self, content, title='openMotor'):
+    def promptYesNo(self, content, title='OpenMotor Vibes'):
         if self.headless:
             return input('{} (y/n): '.format(content)) == 'y'
         else:
@@ -122,7 +126,7 @@ class App(QApplication):
             msg.setStandardButtons(QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No)
             return msg.exec() == QMessageBox.StandardButton.Yes
 
-    def outputException(self, exception, text, title='openMotor - Error'):
+    def outputException(self, exception, text, title='OpenMotor Vibes - Error'):
         if self.headless:
             print(text + " " + str(exception))
         else:

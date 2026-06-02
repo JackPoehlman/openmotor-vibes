@@ -64,6 +64,8 @@ class Motor:
         self.propellant = None
         self.nozzle = Nozzle()
         self.config = MotorConfig()
+        self.hardwareCase = None   # Optional: dict with case designation and metadata
+        self.hardwareNozzle = None # Optional: dict with nozzle part number and metadata
 
         if propDict is not None:
             self.applyDict(propDict)
@@ -84,6 +86,8 @@ class Motor:
             for grain in self.grains
         ]
         motorData["config"] = self.config.getProperties()
+        motorData["hardwareCase"] = self.hardwareCase
+        motorData["hardwareNozzle"] = self.hardwareNozzle
         return motorData
 
     def applyDict(self, dictionary):
@@ -99,6 +103,18 @@ class Motor:
             self.grains.append(grainTypes[entry["type"]]())
             self.grains[-1].setProperties(entry["properties"])
         self.config.setProperties(dictionary["config"])
+        self.hardwareCase = dictionary.get("hardwareCase")
+        self.hardwareNozzle = dictionary.get("hardwareNozzle")
+
+    def getHardwareWeight(self):
+        """Returns the total inert hardware mass in kg (case + nozzle hardware).
+        Returns 0 if no hardware is assigned."""
+        weight = 0
+        if self.hardwareCase is not None:
+            weight += self.hardwareCase.get("hardwareWeightKg", 0)
+        if self.hardwareNozzle is not None:
+            weight += self.hardwareNozzle.get("weightKg", 0)
+        return weight
 
     def calcBurningSurfaceArea(self, regDepth):
         burnoutThres = self.config.getProperty("burnoutWebThres")

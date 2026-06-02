@@ -1,3 +1,5 @@
+import json
+import os
 from os.path import join
 from os import replace
 
@@ -10,6 +12,10 @@ from .defaults import DEFAULT_PROPELLANTS
 from .fileIO import loadFile, saveFile, fileTypes, getConfigPath
 from .widgets.propellantMenu import PropellantMenu
 from .logger import logger
+
+PROPELLANT_LIBRARY_PATH = join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "propellant_library.json"
+)
 
 class PropellantManager(QObject):
 
@@ -65,3 +71,34 @@ class PropellantManager(QObject):
 
     def setPreferences(self, pref):
         self.propMenu.ui.propEditor.setPreferences(pref)
+
+    def getLibraryPropellants(self):
+        """Load available propellants from the bundled library JSON file."""
+        if not os.path.exists(PROPELLANT_LIBRARY_PATH):
+            return []
+        with open(PROPELLANT_LIBRARY_PATH, "r") as f:
+            data = json.load(f)
+        return data
+
+    def importFromLibrary(self, propDicts):
+        """Import propellants from library data, skipping duplicates by name."""
+        existingNames = set(self.getNames())
+        imported = 0
+        for propDict in propDicts:
+            propData = {
+                "name": propDict["name"],
+                "density": propDict["density"],
+                "tabs": propDict["tabs"],
+            }
+            if "ingredients" in propDict:
+                propData["ingredients"] = propDict["ingredients"]
+            if propData["name"] not in existingNames:
+                newProp = motorlib.propellant.Propellant()
+                newProp.setProperties(propData)
+                self.propellants.append(newProp)
+                existingNames.add(propData["name"])
+                imported += 1
+        if imported > 0:
+            self.savePropellants()
+            self.updated.emit()
+        return imported
