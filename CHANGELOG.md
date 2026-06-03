@@ -18,27 +18,37 @@ This fork is periodically rebased on upstream openMotor releases. To see the ful
 ## [Unreleased]
 
 ### Added
-- **NozzleCoeffTool** - Back-calculate throat erosion and slag coefficients for nozzle analysis
-- **Casing section** in nozzle preview widget for enhanced nozzle visualization
-- **Propellant diameter display** in motor statistics alongside propellant length
-- **Tool input memory** - Tool inputs are now remembered between runs for improved workflow
+- No changes yet.
 
 ### Changed
-- Relaxed grain size limits to support more diverse motor designs
-- Improved error messaging to mention Kn (characteristic velocity) in thrust calculations
-- Updated grain and geometry type hints and associated tests for better code quality
-- Formatting and import structure improvements across motorlib
+- No changes yet.
 
 ### Fixed
-- Fixed spurious high core Mach numbers caused by chamber pressure dropping at beginning or end of burn
-- Fixed core Mach calculation issues
-- Fixed issue with grain perimeter calculation using rewritten method
-- Fixed design designation handling to support arbitrarily long designations
-- Fixed handling of invalid preference and propellant files to degrade gracefully
-- Fixed design designation support for longer motor designations
+- No changes yet.
 
 ### Removed
-- Unused imports cleanup across motorlib modules
+- No changes yet.
+
+---
+
+## [0.6.3] - 2026-06-02
+
+### Fixed
+- Fixed a contour edge-case in the Python perimeter fallback (`mathlib/_find_perimeter_py.py`) for marching-squares case 14. This resolves incorrect segment stitching that could break regression visualizer output and area graph rendering in some grain states.
+- Fixed stale preview updates in the grain preview pipeline by guarding background results with request IDs, preventing older worker results from overwriting newer UI state.
+
+### Changed
+- Refactored grain preview generation (`uilib/widgets/grainPreviewWidget.py`) to split fast face preview rendering from heavier regression and area generation.
+- Regression and area previews are now generated lazily (only when those tabs are active), which significantly improves responsiveness while editing grain parameters.
+- Added staged preview quality updates with an idle full-refresh pass to keep interaction smooth during rapid changes while still converging to full-quality output.
+- Added core perimeter memoization in `motorlib/grain.py` so repeated perimeter queries reuse computed values instead of recomputing every call.
+
+### Performance
+- Improved setup and interaction speed for heavy grains (especially Finocyl and Moonburner) by reducing repeated perimeter and FMM-driven work during live UI updates.
+- Reduced UI lag when tweaking complex grain geometry by avoiding unnecessary regression visualization work until needed.
+
+### Packaging and Release
+- Published a fresh Windows installer for this release: OpenMotorVibes-Setup.exe.
 
 ---
 
@@ -61,7 +71,7 @@ This fork is periodically rebased on upstream openMotor releases. To see the ful
 
 ## Upstream Version Tracking
 
-This fork is based on upstream openMotor commit: `da7f410` ("Gracefully handle invalid preference/propellant files")
+This fork is based on upstream openMotor commit: da7f410 ("Gracefully handle invalid preference/propellant files")
 
 Last sync with upstream: April 25, 2026
 
