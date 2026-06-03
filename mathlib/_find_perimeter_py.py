@@ -137,7 +137,7 @@ def _get_perimeter(array, level, vertex_connect_high, returning_contours):
                 add_var = _hypot(1 - top, 1 - right)
             elif square_case == 14:
                 if returning_contours:
-                    segments.append((bottom_tuple, top_tuple))
+                    segments.append((left_tuple, top_tuple))
                 add_var = _hypot(top, 1 - left)
 
             perimeter += add_var

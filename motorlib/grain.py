@@ -317,6 +317,7 @@ class FmmGrain(PerforatedGrain):
         self.regressionMap = None
         self.faceArea = None
         self.faceAreaFunc = None
+        self.corePerimeter = {}
 
     def normalize(self, value: float) -> float:
         """
@@ -377,6 +378,7 @@ class FmmGrain(PerforatedGrain):
         self.mask = self.mapX**2 + self.mapY**2 > 1
         self.coreMap = np.ones_like(self.mapX)
         self.regressionMap = None
+        self.corePerimeter = {}
 
     @abstractmethod
     def generateCoreMap(self) -> None:
@@ -420,7 +422,16 @@ class FmmGrain(PerforatedGrain):
 
     def getCorePerimeter(self, regDist: float) -> float:
         mapDist = self.normalize(regDist)
-        return self.mapToLength(mathlib.find_perimeter(self.regressionMap, mapDist)[0])
+        # Cache by map index to avoid repeated marching-squares work for near-identical distances.
+        mapIndex = int(mapDist * self.mapDim)
+        mapIndex = max(mapIndex, 0)
+
+        if mapIndex not in self.corePerimeter:
+            sampledDist = mapIndex / self.mapDim
+            perimeter = mathlib.find_perimeter(self.regressionMap, sampledDist)[0]
+            self.corePerimeter[mapIndex] = self.mapToLength(perimeter)
+
+        return self.corePerimeter[mapIndex]
 
     def getFaceArea(self, regDist: float):
         mapDist = self.normalize(regDist)
